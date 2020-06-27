@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
 body{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*inicio do header*/
@@ -21,6 +23,10 @@ header{
     justify-content: center;
     border-bottom: 3px solid #8c00ff;
 }
+
+
+/*Para que o conteudo respeite a grid coloquei 62%
+para que ocupe um espaço de 1190px no centro quando a estiver em uma tela full*/
 
 nav{
    height: 130px;
@@ -87,3 +93,39 @@ nav{
 }
 
 /*inicio do fim do header*/
+
+
+/*banner*/
+.container{
+    width: 100%;
+    height: 600px;    
+    display: flex;
+    justify-content: center;
+    background-color:#1b1b1b;
+    padding: 12px 0 0 0;
+    box-shadow: -2px 9px 22px black;
+}
+
+.banner{
+    width: 62%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 93%;
+}
+
+.banner section{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 44%;
+    height: 33%;
+    margin-right: -23%;
+    z-index: 1;
+}
+
+.banner section h2{
+    font-size:58px;
+    font-weight: bolder;
+}
+
