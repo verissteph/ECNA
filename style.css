@@ -154,7 +154,7 @@ nav{
 
 .cotacao{
     width: 100%;
-    height: 500px;    
+    height: 450px;    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -170,11 +170,11 @@ nav{
 /*Classe pra todos os titulos*/
 
 h1{
-    font-size: 106px;
+    font-size: 10vh;
 }
 
 h2{
-    font-weight: normal
+    font-weight: normal;
 }
 
 h3{
@@ -205,6 +205,49 @@ h3{
 }
 
 /*Fim da Cotação*/
+
+.variacao{
+    width: 100%;
+    height: 400px;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1b1b1b;
+    padding: 1% 0;
+    box-shadow: -2px 9px 22px black;
+    z-index: 0;
+}
+
+.variacao .linha{
+    background-color: #8c00ff;
+}
+
+.min-max{
+    display: flex;
+    justify-content: space-around;
+    width: 62%;
+    margin-top: 45px;
+}
+
+.min-max-conteudo{
+    width: 30%;
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    border: solid 3px #8c00ff;
+    padding:20px;
+}
+
+.min-max-conteudo h3{
+    margin-top: 0px;
+}
+
+.min-max em {
+    font-size: 4vh;
+    font-weight: bolder;
+}
 
 /* FOOTER */
 
