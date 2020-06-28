@@ -17,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
     height: 60%;
+    max-width: 1170px;
     
 }
 
@@ -226,6 +227,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
 }
 
 .banner-2 section {

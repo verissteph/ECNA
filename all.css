@@ -31,6 +31,7 @@ para que ocupe um espaço de 1190px no centro quando a estiver em uma tela full*
 nav{
    height: 130px;
    width: 62%;
+   max-width: 1170px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -52,7 +53,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 60%;
-
 }
 
 .menu_de_navegacao a{
@@ -104,16 +104,17 @@ footer {
     /* margin-top: 127.5vh; */
     bottom: 0px;
     height: 236px;
-    box-sizing: border-box;
     padding-top: 30px;
     z-index: -10;
+    display: flex;
+    justify-content: center;
 }
 
 footer div {
-    margin: auto 20%;
-    width: 70%;
+    width: 62%;
     display: flex;
     flex-direction: row;
+    max-width: 1170px;
 }
 
 footer div div{
