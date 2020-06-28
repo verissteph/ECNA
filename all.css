@@ -31,7 +31,7 @@ para que ocupe um espaço de 1190px no centro quando a estiver em uma tela full*
 nav{
    height: 130px;
    width: 62%;
-   max-width: 1170px;
+   max-width: 80%;
    display: flex;
    justify-content: space-between;
    align-items: center;
