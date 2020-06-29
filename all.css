@@ -109,6 +109,7 @@ footer {
     z-index: -10;
     display: flex;
     justify-content: center;
+    box-shadow: inset 0 0 10px #313638;
 }
 
 footer div {
