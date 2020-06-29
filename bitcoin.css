@@ -1,0 +1,196 @@
+/* Início da página o que é bitcoin */
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.divbit {
+    height: 35vh;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.titbit {
+    width: 35vw;
+    font-size: 1.5vw;
+    margin-left: -1.5vw;
+    margin-top: 1.9vh;
+}
+
+.imgbit {
+    margin-top: 1.8vh;
+}
+
+.simbolbit {
+    width: 8.5vw;
+}
+
+.videotit {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: -10vh;
+}
+
+.videobit {
+    position: relative;
+    width: 60vw;
+    height: 415px;
+}
+
+.varbit{
+    z-index: 2;
+    flex-direction: column;
+    height: 1100px;
+    position: relative;
+}
+
+.textobit {
+    width: 45vw;
+    margin-top: 20%;
+}
+
+.textobit p {
+    font-size: 1vw;
+}
+
+.textobit h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.textobit h3 {
+    font-size: 1.3vw;
+}
+
+@media (max-width: 480px) {
+    /* teste excluir */
+    nav {
+        display: block;
+    }
+    .menu_de_navegacao, .menu_de_navegacao a {
+        display: block;
+        width: 50%;
+    }
+    .paginas{
+        display: block;
+        width: 20%;
+    }
+    .login-cadastro{
+        display: block;
+        width: 30%;
+    }
+    /* teste excluir */
+
+    .main{
+        width: 100vw;
+    }
+
+    .divbit{
+        height: 15vh;;
+    }
+
+    .titbit {
+        font-size: 2vw;
+        width: 55vw;
+        margin-top: 1.9vh;
+        margin-left: 5vw;
+    }
+
+    .imgbit {
+        margin-top: 0.5vh;
+    }
+
+    .simbolbit{
+        width: 13vw;
+    }
+
+    .videobit{
+        width: 90vw;
+        height: 27vh;
+    }
+
+    .videotit {
+        top: -5.5vh;
+        width: 90vw;
+    }
+
+    .varbit{
+        height: 80vh;
+    }
+
+    .textobit {
+        width: 80vw;
+        margin-left: 0vw;
+        margin-top: 35%;
+    }
+
+    .textobit p {
+        font-size: 2vw;
+    }
+    
+    .textobit h2 {
+        font-size: 2.5vw;
+        margin-top: 3vh;
+    }
+    
+    .textobit h3 {
+        font-size: 2.1vw;
+    }
+}
+
+@media (max-width: 995px) and (min-width: 481px) {    
+        .main{
+            width: 100vw;
+        }
+    
+        .divbit{
+            height: 15vh;
+        }
+    
+        .titbit {
+            font-size: 2vw;
+            width: 55vw;
+            margin-top: 2.7vh;
+            margin-left: 5vw;
+        }
+    
+        .imgbit {
+            margin-top: 0.5vh;
+        }
+    
+        .simbolbit{
+            width: 13vw;
+        }
+    
+        .videobit{
+            width: 90vw;
+            height: 315px;
+        }
+    
+        .videotit {
+            top: -2.5vh;
+            width: 90vw;
+        }
+    
+        .textobit {
+            width: 80vw;
+            margin-left: 0vw;
+            margin-top: 23%;
+        }
+    
+        .textobit p {
+            font-size: 2vw;
+        }
+        
+        .textobit h2 {
+            font-size: 2.5vw;
+            margin-top: 3vh;
+        }
+        
+        .textobit h3 {
+            font-size: 2.1vw;
+        }
+}
