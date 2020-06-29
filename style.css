@@ -7,7 +7,7 @@
     align-items: center;
     background-color:#1b1b1b;
     padding: 0 0 0 0;
-    box-shadow: -2px 9px 22px #1f1f1f;
+    box-shadow: inset -2px 9px 22px #1f1f1f;
     z-index: 4;
 }
 
@@ -52,7 +52,7 @@
     align-items: center;
     background-color:#8c00ff;
     padding: 5% 0 ;
-    box-shadow: -2px 9px 22px black;
+    box-shadow: inset -2px 9px 22px black;
     z-index: 0;
 }
 
@@ -66,7 +66,7 @@
     flex-wrap: wrap;
     background-color:#8c00ff;
     padding: 1% 0;
-    box-shadow: -2px 9px 22px black;
+    box-shadow: inset -2px 9px 22px black;
     z-index: 1;
 }
 
@@ -122,7 +122,7 @@ h3{
     flex-wrap: wrap;
     background-color: #1b1b1b;
     padding: 1% 0;
-    box-shadow: -2px 9px 22px black;
+    box-shadow: inset -2px 9px 22px black;
     z-index: 0;
 }
 
@@ -170,7 +170,7 @@ h3{
     flex-wrap: wrap;
     background-color: #1b1b1b;
     padding: 1% 0;
-    box-shadow: -2px 9px 22px black;
+    box-shadow: inset -2px 9px 22px black;
     z-index: -3;
 }
 
@@ -218,7 +218,7 @@ h3{
     align-items: center;
     background-color:#8c00ff;
     padding: 5% 0 ;
-    box-shadow: -2px 9px 22px black;
+    box-shadow: inset -2px 9px 22px black;
     z-index: -4;
 }
 
