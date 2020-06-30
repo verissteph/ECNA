@@ -120,6 +120,7 @@ footer {
     z-index: -10;
     display: flex;
     justify-content: center;
+    box-shadow: inset 0px 0px 10px #333533;
 }
 
 footer div {
@@ -160,6 +161,7 @@ footer div div p.sobre {
 footer div div p span {
     font-weight: bold;
 }
+
 
 @media (max-width: 995px) {
     header{
