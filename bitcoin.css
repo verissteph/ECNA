@@ -42,13 +42,13 @@ main {
 .varbit{
     z-index: 2;
     flex-direction: column;
-    height: 1100px;
+    height: 180vh;
     position: relative;
 }
 
 .textobit {
     width: 45vw;
-    margin-top: 20%;
+    margin-top: 8%;
 }
 
 .textobit p {
@@ -66,24 +66,6 @@ main {
 }
 
 @media (max-width: 480px) {
-    /* teste excluir */
-    nav {
-        display: block;
-    }
-    .menu_de_navegacao, .menu_de_navegacao a {
-        display: block;
-        width: 50%;
-    }
-    .paginas{
-        display: block;
-        width: 20%;
-    }
-    .login-cadastro{
-        display: block;
-        width: 30%;
-    }
-    /* teste excluir */
-
     .main{
         width: 100vw;
     }
@@ -118,13 +100,13 @@ main {
     }
 
     .varbit{
-        height: 80vh;
+        height: 90vh;
     }
 
     .textobit {
         width: 80vw;
         margin-left: 0vw;
-        margin-top: 35%;
+        margin-top: 25%;
     }
 
     .textobit p {
@@ -165,6 +147,10 @@ main {
             width: 13vw;
         }
     
+        .varbit{
+            height: 110vh;
+        }
+
         .videobit{
             width: 90vw;
             height: 315px;
