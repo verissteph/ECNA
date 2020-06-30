@@ -1,0 +1,57 @@
+.divmulher{
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: start ;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+.mulher{
+    background-color: blueviolet;
+    height: 80vh;
+    margin-right:auto;
+    padding-left: 23%;
+  
+}
+.iconemsg{
+    position: absolute;
+    margin-right: 100%;
+    width: 80px;
+    height: 80px;
+    
+}
+.msgsmall{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    
+}
+#textarea{
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    height: 45px;
+    width: 80%;
+    padding: 5px;
+    padding-left: 16px;
+    margin: 20px 0px;
+    border-radius: 7px;
+}
+.form-contato{
+    display: flex;
+   margin: 0 auto;
+   align-self: center;
+}
+#nome-contato{
+    width: 330px;
+}
+#email-contato{
+    width: 330px;
+}
+#textarea{
+    width: 330px;   
+}
+button{
+    background-color: blueviolet;
+    width: 330px;   
+}
