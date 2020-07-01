@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     color: #ffffff;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@ body{
 
 /*inicio do header*/
 
-header{
+header {
     width: 100%;
     background-color: #1b1b1b;
     display: flex;
@@ -29,15 +29,15 @@ header{
 /*Para que o conteudo respeite a grid coloquei 62%
 para que ocupe um espaço de 1190px no centro quando a estiver em uma tela full*/
 
-nav{
-   height: 130px;
-   width: 70%;
-   max-width: 90%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   color: #ffffff;
-   font-size: 0.9em;
+nav {
+    height: 130px;
+    width: 70%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.9em;
 }
 
 
@@ -48,8 +48,12 @@ nav{
     justify-content: space-around;
     
 } */
+/* A maneira que encontrei de ajeitar o erro no header */
+.menu_de_navegacao {
+    display: flex;
+}
 
-.paginas{
+.paginas {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,7 +62,7 @@ nav{
     flex-direction: row;
 }
 
-.paginas a{
+.paginas a {
     color: #ffffff;
     text-decoration: none;
     list-style-type: none;
@@ -72,18 +76,18 @@ nav{
     justify-content: space-around;
 }
 
-.login-cadastro{
+.login-cadastro {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 325px;
 }
 
-.criar_conta{
+.criar_conta {
     height: 45px;
     width: 140px;
-    background-color:#8c00ff;
+    background-color: #8c00ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +96,7 @@ nav{
     text-decoration: none;
 }
 
-.entrar{
+.entrar {
     height: 45px;
     width: 130px;
     border: 2px solid #8c00ff;
@@ -131,7 +135,7 @@ footer div {
     max-width: 1170px;
 }
 
-footer div div{
+footer div div {
     margin: auto 0;
     display: inline-block;
     flex: 1;
@@ -165,7 +169,7 @@ footer div div p span {
 
 
 @media (max-width: 995px) {
-    header{
+    header {
         border-bottom: none;
         width: 100%;
     }
