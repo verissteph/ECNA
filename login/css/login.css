@@ -15,6 +15,9 @@
 .lista-erro li {
     color: #bb4430;
     margin: .25vw 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.25vh;
 }
 
 /* formulario */
@@ -75,6 +78,62 @@
     justify-content: center;
 }
 
-@media(max-width:995px){
-    
+/* até telas de 995px */
+@media(max-width:995px) {
+    #formulario {
+        padding: 4vw;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .lista-erro {
+        margin-top: .8vh;
+    }
+
+    .lista-erro li {
+        font-weight: bold;
+        font-size: .75rem;
+        font-style: italic;
+    }
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 80%;
+    }
+
+
+}
+
+/* a partir de telas de 450px até telas de 995px*/
+@media (min-width: 450px) and (max-width:990px) {
+
+    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
+    #formulario {
+        padding: 10vw;
+    }
+
+    .titulo {
+        font-size: .9rem;
+    }
+
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 100%;
+    }
+
+    #email,
+    #senha {
+        width: 45%;
+        padding: .95vh;
+        margin: 0.8vw auto;
+    }
+
+    #btn-entrar {
+        padding: 1vh;
+        width: 45%;
+    }
+
 }
