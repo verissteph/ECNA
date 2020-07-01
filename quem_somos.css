@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    font-family: "Montserrat", sans-serif;
+    color: #ffff;
+}
+/*Configuração das caixas*/
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-bottom: 50px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    min-width: 750px;
+    background-color: transparent;
+}
+div.card{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height:250px;
+    background-color: transparent;
+}
+.cardApresentacao{
+    background-image: url("../img/QUEM_SOMOS/icone.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-y: 30%;
+    background-color:Transparent;
+    position:relative;
+    display:block;
+    width: 100%;
+    height: 200px;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+
+.cardApresentacao > h1{
+    background-color: transparent;
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 30px
+}
+.textApresetacao {
+    background-color: transparent;
+    display: inline-block;
+    max-width: 600px;
+    height: 100px;
+    text-align: justify;
+}
+/*Blocos de organização de imagem*/
+.foto{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+}
+.direita{
+    right: 0px;
+}
+.tamanhoImagem
+{   
+    margin-top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: auto;
+}
+/*Blocos de organização de texto*/
+.envolcroTexto{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    padding-left:42px;
+    height: 100%;
+    text-align: left;
+}
+.envolcroTexto > h2{
+    width: 500px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-top: 80;
+    padding-bottom: 20px;
+}
+.envolcroTexto > p{
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.envolcroTextoDir{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    padding:0px 0px 0px 42px;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    margin-right:-50px;
+    right: 0px;
+}
+
+.envolcroTextoDir > h2{
+    width: 500px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.envolcroTextoDir > p{
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    text-align: left;
+}
