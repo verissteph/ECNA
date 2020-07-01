@@ -138,6 +138,7 @@ footer div {
 footer div div {
     margin: auto 0;
     display: inline-block;
+    text-align: center;
     flex: 1;
 }
 
@@ -203,5 +204,13 @@ footer div div p span {
 
     .logo-header a img {
         width: 100%;
+    }
+
+    .entrar, .criar_conta {
+        width: 21vw
+    }
+
+    footer div {
+        width: 90%;
     }
 }
