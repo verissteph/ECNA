@@ -23,5 +23,4 @@ formulario.addEventListener("submit", function (e) {
         listaDeErros.innerHTML += "<li>" + "Deve ter no mínimo 6 caracteres";
     }
 
-
 });
