@@ -147,7 +147,7 @@
     }
 }
 
-/* a partir de telas de 450px até telas de 995px*/
+/* a partir de telas de 450px até telas de 990px*/
 @media (min-width: 450px) and (max-width:990px) {
 
     /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
