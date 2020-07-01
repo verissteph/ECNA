@@ -14,6 +14,8 @@
 .lista-erro li {
     color: #bb4430;
     margin: .25vw 0;
+    font-weight: bold;
+
 }
 
 /* formulario */
@@ -94,4 +96,90 @@
 }
 #termos, #novidades{
     margin-right: 1vw;
+}
+
+/* até telas de 995px */
+@media(max-width:995px) {
+    #formulario {
+        padding: 4vw;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .lista-erro {
+        margin-top: .8vh;
+    }
+
+    .lista-erro li {
+        font-weight: bold;
+        font-size: .75rem;
+        font-style: italic;
+    }
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 80%;
+    }
+    .check{
+        width: 80%;
+    }
+    .conjunto__check.termos{
+        width: 100%;
+        margin-left: 0.45vw;
+    }
+    #termos{
+        margin-right: .5vw;
+    }
+    #termos{
+        font-size: .85rem;
+    }
+    #termos__label{
+        font-size: .85rem;
+    }
+    .conjunto__check.novidades{
+        width: 100%;
+        margin-left: -4.4vw;
+    }
+    #novidades__label{
+        font-size: .85rem;
+    }
+}
+
+/* a partir de telas de 450px até telas de 995px*/
+@media (min-width: 450px) and (max-width:990px) {
+
+    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
+    #formulario {
+        padding: 10vw;
+    }
+
+    .titulo {
+        font-size: .9rem;
+    }
+
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 100%;
+    }
+    #nome,
+    #email,
+    #senha {
+        width: 45%;
+        padding: .95vh;
+        margin: 0.8vw auto;
+    }
+
+    #btn-entrar {
+        padding: 1vh;
+        width: 45%;
+    }
+    .conjunto__check.termos{
+        margin-left: 10vw;
+    }
+    .conjunto__check.novidades{
+        margin-left: -2vw;
+    }
 }
