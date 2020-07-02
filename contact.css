@@ -1,25 +1,53 @@
-.divmulher{
-    background-color: #1b1b1b;
+.main{
     display: flex;
-    justify-content: start ;
-    align-items: flex-start;
+    flex-direction: row;
     width: 100%;
-    height: auto;
+    background-color:#1b1b1b;
+    z-index: 100;
+    box-shadow:-2px 9px 22px black ;
+    padding-top: 20px;
+}
+
+.divmulher{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 40px;
+    background-color: #8c00ff;
+    flex-grow: 1;
 }
 .mulher{
-    background-color: blueviolet;
-    height: 80vh;
-    margin-right:auto;
-    padding-left: 23%;
-  
-}
-.iconemsg{
-    position: absolute;
-    margin-right: 100%;
-    width: 80px;
-    height: 80px;
+    width: 61%;
+    margin-right: 67px;
+    margin-top: -33px;
     
 }
+
+.icone-main-text{
+    width: 62%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+}
+
+.text{
+    width: 100%;
+    padding-right: 50px;
+}
+
+.iconemsg{
+    margin-right: -8%;
+}
+
+h1{
+
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .msgsmall{
     display: inline-block;
     width: 100%;
@@ -30,28 +58,37 @@
 #textarea{
     border: 1px solid #fff;
     background-color: rgba(0,0,0,0);
-    height: 45px;
-    width: 80%;
+    height: 200px;
+    max-height: 200px;
+    max-width: 450px;
+    min-height: 200px;
     padding: 5px;
     padding-left: 16px;
-    margin: 20px 0px;
     border-radius: 7px;
 }
 .form-contato{
     display: flex;
-   margin: 0 auto;
-   align-self: center;
+    align-self: center;
+    justify-content: center;
+    flex-grow: 5;
+    margin: 25px;
 }
-#nome-contato{
-    width: 330px;
+
+.formulario{
+    min-width: 330px;
+    width: 450px;
+    height: 45px;
+    margin: 0 0 25px 0;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    padding-left: 10px;
 }
-#email-contato{
-    width: 330px;
-}
-#textarea{
-    width: 330px;   
-}
+
+
 button{
     background-color: blueviolet;
-    width: 330px;   
+    width: 450px;   
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
 }
