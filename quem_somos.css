@@ -10,137 +10,138 @@
 /*Configuração das caixas*/
 main{
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 100vw;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
 }
+
 article{
     display: flex;
-    flex-direction: column;
-    min-width: 750px;
-    background-color: transparent;
+
 }
-div.card{
-    position: relative;
+
+.card-apresentacao{
     display: flex;
-    width: 100%;
-    height:250px;
-    background-color: transparent;
-}
-.cardApresentacao{
-    background-image: url("img/icone.png");
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
-    background-position-y: 30%;
-    background-color:Transparent;
-    position:relative;
-    display:block;
-    width: 100%;
-    height: 200px;
-    padding-left: 10%;
-    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
 }
 
-.cardApresentacao > h1{
-    background-color: transparent;
-    width: 100%;
-    padding-top: 20px;
-    text-transform: uppercase;
-    font-size: 30px
-}
-.textApresetacao {
-    background-color: transparent;
-    display: inline-block;
-    max-width: 600px;
-    height: 100px;
-    text-align: justify;
-}
-/*Blocos de organização de imagem*/
-.foto{
-    position: absolute;
-    width: 35%;
-    height: 100%;
-}
-.direita{
-    right: 0px;
-}
-.tamanhoImagem
-{   
-    margin-top: 50%;
-    transform: translateY(-50%);
-    width: 250px;
-    height: auto;
-}
-/*Blocos de organização de texto*/
-.envolcroTexto{
-    display: inline-block;
-    width: 75%;
-    height: 100%;
-    text-align: left;
-    padding-left:42px;
-    height: 100%;
-    text-align: left;
-}
-.envolcroTexto > h2{
-    width: 500px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 50px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-}
-.envolcroTexto > p{
-    width: 400px;
-    height: 100px;
-    font-size: 20px;
-    text-align: left;
+.texto{
+    margin-left: -10px;
+    background-color: rgba(0,0,0,0);
 }
 
-.envolcroTextoDir{
-    display: inline-block;
-    width: 75%;
-    height: 100%;
-    text-align: left;
-    padding:0px 0px 0px 42px;
-    height: 100%;
-    text-align: left;
-    position: absolute;
-    margin-right:-50px;
-    right: 0px;
+h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0);
 }
 
-.envolcroTextoDir > h2{
-    width: 500px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 50px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+em {
+    background-color: rgba(0,0,0,0);
 }
-.envolcroTextoDir > p{
-    width: 400px;
-    height: 100px;
-    font-size: 20px;
-    text-align: left;
+
+/*integrante começa aqui*/
+
+.integrante-direita{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    margin: 65px 0;
 }
-/*alterações 02-07*/
-/*Inclui icones*/
-ul .icones {
-    padding-top: 30px;
-    list-style: none;
-    display: inline-block; 
+
+.texto-integrante{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }
-ul li .icones{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+
+.foto-integrante{
+    width: 40%;
 }
+
+.foto-integrante img{
+    width: 90%;
+    margin-right: 35px;
+}
+
+.texto-integrante ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+}
+
 .icones img{
-    width: 25px;
     height: 25px;
 }
-.decorativos{
-    padding-left: 20px;
+
+.icones li{
+    list-style-type: none;
+
 }
-/*Media querygit s*/
+
+h2{
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    width: 90%;
+}
+
+
+@media(max-width:995px){
+
+    .card-apresentacao{
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    h1{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    em {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        max-width: 90%;
+        align-self: center;
+    }
+    
+
+    .integrante-direita{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .em-baixo{
+        flex-direction: column-reverse;
+
+    }
+
+    .icones img{
+        margin-bottom: 10px;
+    }
+
+    .foto-integrante{
+        margin-bottom: 15px;
+    }
+}
