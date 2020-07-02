@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-header">
+                <a href="index.html"><img src="img/logo-ecna.png" alt="Logo_Ecna"></a>
+            </div>
+            <div class="paginas">
+                <ul>
+                    <li><a href="quem_somos.html">Quem somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="bitcoin.html">O que é o bitcoin</a></li>
+                </ul>
+            </div>
+            <div class="login-cadastro">
+                <a class="entrar" href="login.html">Entrar</a>
+                <a class="criar_conta" href="cadastro.html">Crie sua conta</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Formulário -->
+    <main class="caixa__formulario">
+        <form id="formulario">
+            <h2 class="titulo">Acesse sua conta</h2>
+            <div class="caixa-erro" id="caixa-erro">
+                <ul class="lista-erro">
+                </ul>
+            </div>
+            <div class="caixa__formulario--grupo" id="formulario--grupo">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="check" id="formulario__checkbox">
+                <div class="conjunto__check termos">
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos" id="termos__label">Aceito os termos de serviço</label>
+                </div>
+                <div class="conjunto__check novidades">
+                    <input type="checkbox" name="novidades" id="novidades">
+                    <label for="novidades" id="novidades__label">Receber novidades</label>
+                </div>
+            </div>
+            <div class="caixa__formulario--btn">
+                <button id="btn-entrar">Entrar</button>
+            </div>
+        </form>
+    </main>
+    <!-- Fim do formulário -->
+    <footer>
+        <div>
+            <div class="tab1">
+                <img src="img/logo-ecna.png" width="100px" alt="ECNA"><br>
+                <p class="endereco">R. FUNCHAL, 538 <br>ITAIM BIBI, SÃO PAULO-SP <br>CNPJ 21.246.584-0001/50</p>
+                <div class="social-icons">
+                    <img src="img/ig-icon.png" width="30px" alt="instagram">
+                    <img src="img/fb-icon.png" width="30px" alt="facebook">
+                </div>
+            </div>
+            <div class="tab2">
+                <p class="sobre"><span>SOBRE NÓS</span><br>Quem somos<br>Imprensa<br>Trabalhe conosco</p>
+            </div>
+            <div class="tab3">
+                <p class="sobre"><span>AJUDA</span><br>Taxas<br>Termos e políticas<br>Central de ajuda</p>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="/cadastro/js/cadastro.js"></script> -->
+</body>
+
+</html>

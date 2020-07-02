@@ -1,0 +1,219 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.lista-erro {
+    font-size: 14px;
+    margin-bottom: .5vw;
+}
+
+.lista-erro li {
+    color: #bb4430;
+    margin: .25vw 0;
+    font-weight: bold;
+
+}
+
+/* formulario */
+.caixa__formulario {
+    width: 100%;
+    background-color: #1B1B1B;
+    height: 50vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+}
+
+.titulo {
+    margin-top: 1.5vw;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.caixa__formulario--grupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa__formulario--grupo input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#email,
+#senha,
+#nome {
+    margin: .5vw auto;
+    width: 30%;
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: #1B1B1B;
+}
+
+#email:focus {
+    border: 0.5px solid #eee;
+    /* #8C00FF */
+}
+
+.caixa__formulario--btn {
+    margin: 1vw 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-entrar {
+    width: 30%;
+    padding: .8%;
+    background-color: #8c00ff;
+    color: #fff;
+    border-radius: 8px;
+    align-self: center;
+    justify-content: center;
+}
+
+.check {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.conjunto__check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: -6.2vw;
+}
+.novidades{
+    margin-left:-11vw;
+}
+#termos, #novidades{
+    margin-right: 1vw;
+}
+
+/* até telas de 995px */
+@media(max-width:995px) {
+
+    #email,
+    #senha,
+    #nome {
+        margin: 2vw auto;
+        width: 100%;
+        padding: .5%;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        background-color: #1B1B1B;
+    }
+
+
+    #formulario {
+        padding: 4vw;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    .lista-erro {
+        margin-top: .8vh;
+    }
+
+    .lista-erro li {
+        font-weight: bold;
+        font-size: .75rem;
+        font-style: italic;
+    }
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 80%;
+    }
+    .check{
+        width: 80%;
+    }
+    .conjunto__check.termos{
+        width: 100%;
+        margin-left: 0.45vw;
+    }
+    #termos{
+        margin-right: .5vw;
+    }
+    #termos{
+        font-size: .85rem;
+    }
+    #termos__label{
+        font-size: .85rem;
+    }
+    .conjunto__check.novidades{
+        width: 100%;
+        margin-left: -4.4vw;
+    }
+    #novidades__label{
+        font-size: .85rem;
+    }
+
+    #formulario__checkbox {
+        display: flex;
+        text-align: left;
+        align-items: left;
+    }
+
+    #btn-entrar {
+        width: 100%;
+    }
+}
+
+/* a partir de telas de 450px até telas de 990px*/
+/* @media (min-width: 450px) and (max-width:990px) { */
+
+    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
+    /* #formulario {
+        padding: 10vw;
+    }
+
+    .titulo {
+        font-size: .9rem;
+    }
+
+
+    .caixa__formulario--grupo,
+    .caixa__formulario--btn {
+        width: 100%;
+    }
+    #nome,
+    #email,
+    #senha {
+        width: 45%;
+        padding: .95vh;
+        margin: 0.8vw auto;
+    }
+
+    #btn-entrar {
+        padding: 1vh;
+        width: 45%;
+    }
+    .conjunto__check.termos{
+        margin-left: 10vw;
+    }
+    .conjunto__check.novidades{
+        margin-left: -2vw;
+    }
+} */
