@@ -99,19 +99,52 @@
         font-style: italic;
     }
 
+    .caixa__formulario .formulario {
+        height: 50vh;
+    }
+
     .caixa__formulario--grupo,
     .caixa__formulario--btn {
         width: 80%;
     }
 
+    #email, #senha, #btn-entrar, #titulo {
+        width: 80%;
+        margin: 2vh;
+    }
 
+    .caixa__formulario {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+    }
+
+    .caixa__formulario--grupo {
+        /* height: 100%; */
+
+    }
+
+    #formulario {
+        width: 100%;
+        /* height: 50vh; */
+        /* margin: auto auto; */
+        /* vertical-align: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .caixa__formulario {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 /* a partir de telas de 450px até telas de 995px*/
-@media (min-width: 450px) and (max-width:990px) {
+/* @media (min-width: 450px) and (max-width:990px) { */
 
     /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
-    #formulario {
+    /* #formulario {
         padding: 10vw;
     }
 
@@ -137,4 +170,4 @@
         width: 45%;
     }
 
-}
+} */

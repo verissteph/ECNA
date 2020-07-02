@@ -5,36 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/all.css">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="all.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div>
-                <a href="/index.html"><img src="/img/logo-ecna.png" alt="Logo_Ecna"></a>
+            <div class="logo-header">
+                <a href="index.html"><img src="img/logo-ecna.png" alt="Logo_Ecna"></a>
             </div>
-            <div class="menu_de_navegacao">
-                <ul class="paginas">
-                    <a href="/quem_somos.html">
-                        <li>Quem somos</li>
-                    </a>
-                    <a href="#">
-                        <li>Contato</li>
-                    </a>
-                    <a href="/bitcoin.html">
-                        <li>O que é o bitcoin</li>
-                    </a>
+            <div class="paginas">
+                <ul>
+                    <li><a href="quem_somos.html">Quem somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="bitcoin.html">O que é o bitcoin</a></li>
                 </ul>
-                <ul class="login-cadastro">
-                    <a href="/login/login.html">
-                        <li class="entrar hide">Entrar</li>
-                    </a>
-                    <a href="/cadastro/cadastro.html">
-                        <li class="criar_conta">Crie sua conta</li>
-                    </a>
-                </ul>
+            </div>
+            <div class="login-cadastro">
+                <a class="entrar" href="login.html">Entrar</a>
+                <a class="criar_conta" href="cadastro.html">Crie sua conta</a>
             </div>
         </nav>
     </header>
@@ -42,28 +32,21 @@
     <main class="caixa__formulario">
         <form id="formulario">
             <h2 class="titulo">Acesse sua conta</h2>
-            <div class="caixa-erro" id="caixa-erro">
-                <ul class="lista-erro">
-                </ul>
-            </div>
-            <div class="caixa__formulario--grupo" id="formulario--grupo">
-                <input type="email" id="email" placeholder="Digite seu e-mail">
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-            </div>
-            <div class="caixa__formulario--btn">
-                <button id="btn-entrar">Entrar</button>
-            </div>
+            
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <button id="btn-entrar">Entrar</button>
         </form>
     </main>
     <!-- Fim do formulário -->
     <footer>
         <div>
             <div class="tab1">
-                <img src="/img/logo-ecna.png" width="100px" alt="ECNA"><br>
+                <img src="img/logo-ecna.png" width="100px" alt="ECNA"><br>
                 <p class="endereco">R. FUNCHAL, 538 <br>ITAIM BIBI, SÃO PAULO-SP <br>CNPJ 21.246.584-0001/50</p>
                 <div class="social-icons">
-                    <img src="/img/ig-icon.png" width="30px" alt="instagram">
-                    <img src="/img/fb-icon.png" width="30px" alt="facebook">
+                    <img src="img/ig-icon.png" width="30px" alt="instagram">
+                    <img src="img/fb-icon.png" width="30px" alt="facebook">
                 </div>
             </div>
             <div class="tab2">
@@ -74,7 +57,6 @@
             </div>
         </div>
     </footer>
-    <script src="/login/js/login.js"></script>
 </body>
 
 </html>
