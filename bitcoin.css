@@ -6,7 +6,7 @@ main {
 }
 
 .divbit {
-    height: 35vh;
+    height: 300px;
     flex-direction: row;
     align-items: flex-start;
 }
@@ -15,11 +15,11 @@ main {
     width: 35vw;
     font-size: 1.5vw;
     margin-left: -1.5vw;
-    margin-top: 1.9vh;
+    margin-top: 43px;
 }
 
 .imgbit {
-    margin-top: 1.8vh;
+    margin-top: 40px;
 }
 
 .simbolbit {
@@ -30,7 +30,7 @@ main {
     display: flex;
     position: absolute;
     align-items: center;
-    top: -10vh;
+    top: -90px;
 }
 
 .videobit {
@@ -42,13 +42,13 @@ main {
 .varbit{
     z-index: 2;
     flex-direction: column;
-    height: 180vh;
+    height: 1050px;
     position: relative;
 }
 
 .textobit {
     width: 45vw;
-    margin-top: 8%;
+    margin-top: 310px;
 }
 
 .textobit p {
