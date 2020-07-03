@@ -129,35 +129,3 @@
         align-items: center;
     }
 }
-
-/* a partir de telas de 450px até telas de 995px*/
-/* @media (min-width: 450px) and (max-width:990px) { */
-
-    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
-    /* #formulario {
-        padding: 10vw;
-    }
-
-    .titulo {
-        font-size: .9rem;
-    }
-
-
-    .caixa__formulario--grupo,
-    .caixa__formulario--btn {
-        width: 100%;
-    }
-
-    #email,
-    #senha {
-        width: 45%;
-        padding: .95vh;
-        margin: 0.8vw auto;
-    }
-
-    #btn-entrar {
-        padding: 1vh;
-        width: 45%;
-    }
-
-} */
