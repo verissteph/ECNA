@@ -176,5 +176,8 @@
 
     #btn-entrar {
         width: 100%;
+        background-color: #D701FF;
+        box-shadow: inset 0px 5px 20px #8c00ff;
+        border: none;
     }
 }
