@@ -113,6 +113,12 @@
         margin: 2vh;
     }
 
+    #btn-entrar {
+        background-color: #D701FF;
+        box-shadow: inset 0px 5px 20px #8c00ff;
+        border: none;
+    }
+
     .caixa__formulario {
         margin: 0;
         padding: 0;
