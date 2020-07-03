@@ -185,4 +185,14 @@ p{
     p{
         text-align: center;
     }
+
+   .foto-integrante{
+       width: 67%;
+   }
+
+   .correcao-margem{
+       margin-right: -35px;
+
+   }
+    
 }
