@@ -68,7 +68,6 @@
 
 #email:focus {
     border: 0.5px solid #eee;
-    /* #8C00FF */
 }
 
 .caixa__formulario--btn {
@@ -91,7 +90,6 @@
 .check {
     width: 100%;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
 }
 
@@ -180,40 +178,3 @@
         width: 100%;
     }
 }
-
-/* a partir de telas de 450px até telas de 990px*/
-/* @media (min-width: 450px) and (max-width:990px) { */
-
-    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
-    /* #formulario {
-        padding: 10vw;
-    }
-
-    .titulo {
-        font-size: .9rem;
-    }
-
-
-    .caixa__formulario--grupo,
-    .caixa__formulario--btn {
-        width: 100%;
-    }
-    #nome,
-    #email,
-    #senha {
-        width: 45%;
-        padding: .95vh;
-        margin: 0.8vw auto;
-    }
-
-    #btn-entrar {
-        padding: 1vh;
-        width: 45%;
-    }
-    .conjunto__check.termos{
-        margin-left: 10vw;
-    }
-    .conjunto__check.novidades{
-        margin-left: -2vw;
-    }
-} */
