@@ -126,6 +126,7 @@ p{
     h1{
         text-align: center;
         padding: 10px;
+        font-size: 20px;
     }
     
     em {
@@ -149,7 +150,8 @@ p{
     }
 
     .icones{
-        width:32%;
+        width:65px;
+        justify-content: center;
     }
 
     .icones img{
@@ -162,13 +164,25 @@ p{
     }
 
     .texto{
-        width: 60%;
+        width: 100%;
         padding: 0;
         display: flex;
         flex-direction: column;
     }
 
+    .texto-integrante{
+        width: 78%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
     #icones-variados{
         display: none;
+    }
+    
+    p{
+        text-align: center;
     }
 }
