@@ -148,8 +148,13 @@ p{
 
     }
 
+    .icones{
+        width:32%;
+    }
+
     .icones img{
         margin-bottom: 10px;
+        display: flex;
     }
 
     .foto-integrante{
@@ -161,5 +166,9 @@ p{
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    #icones-variados{
+        display: none;
     }
 }
