@@ -119,18 +119,8 @@
         height: 50vh;
     }
 
-    /* .caixa__formulario--grupo {
-            height: 100%;
-
-    } */
-
     #formulario {
         width: 100%;
-        /* height: 50vh; */
-        /* margin: auto auto; */
-        /* vertical-align: center; */
-        /* display: flex; */
-        /* flex-direction: column; */
     }
 
     .caixa__formulario {
