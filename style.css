@@ -302,7 +302,7 @@ button{
         display: none;
     }
 
-    .cotacao_r, .volume_r, .mm_r, .lead_r {
+    .cotacao_r, .volume_r, .mm_r, .lead_r, .form_r {
         display: flex;
     }
     
