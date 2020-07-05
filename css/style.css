@@ -306,6 +306,10 @@ button{
     .cotacao_r, .volume_r, .mm_r, .lead_r, .form_r {
         display: flex;
     }
+
+    body {
+        background-color: #1B1B1B;
+    }
     
     section {
         padding: 3vw;
