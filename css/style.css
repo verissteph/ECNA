@@ -211,8 +211,8 @@ h3{
 /*Cotação*/
 
 .formulario{
-    width: 100%; 
-    height: 540px;
+    width: 100%;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,22 +223,34 @@ h3{
 }
 
 .content-formulario{
-    width: 62%;
+    width: 100%;
+    max-width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1170px;
+}
+
+.content-formulario div{
+    flex-grow: 1;
+
 }
 
 .content-formulario img{
-    width: 100%;
 }
 
-.banner-2 section {
-    width: 80%;
-    max-width: 670px;
-    text-align: left;
+.content-formulario section{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 135px;
 }
+
+section h2 {
+    font-weight: bolder;
+    font-size: 34px;
+}
+
 
 
 input{
