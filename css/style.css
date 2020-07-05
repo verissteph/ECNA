@@ -230,10 +230,16 @@ h3{
     max-width: 1170px;
 }
 
+.content-formulario img{
+    width: 100%;
+}
+
 .banner-2 section {
-    width: 60%;
+    width: 80%;
+    max-width: 670px;
     text-align: left;
 }
+
 
 input{
     border: 1px solid #fff;
