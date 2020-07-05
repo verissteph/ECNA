@@ -409,6 +409,7 @@ button{
     article.content_lead h2 {
         font-weight: bolder;
         text-transform: uppercase;
+        font-size: 20px;
     }
 
     article.content_lead p {
