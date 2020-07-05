@@ -7,192 +7,179 @@
     font-family: "Montserrat", sans-serif;
     color: #ffff;
 }
+
+/*Bloco de apresentação*/
+.cardApresentacao{
+    background-image: url("img/icone.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-y: 30%;
+    background-color:Transparent;
+    position:relative;
+    display:block;
+    width: 100%;
+    height: 200px;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+
+.cardApresentacao > h1{
+    background-color: transparent;
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 30px
+}
+.cardApresentacao > p {
+    background-color: transparent;
+    display: inline-block;
+    width: 85%;
+    text-align: justify;
+}
 /*Configuração das caixas*/
 main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 50px 0;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    margin-bottom: 50px;
 }
-
 article{
     display: flex;
-
-}
-
-.card-apresentacao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 720px;
-}
-
-.texto{
-    margin-left: -10px;
-    background-color: rgba(0,0,0,0);
-}
-
-h1{
-    font-size: 35px;
-    margin-bottom: 5px;
-    background-color: rgba(0,0,0,0);
-}
-
-em {
-    background-color: rgba(0,0,0,0);
-}
-
-/*integrante começa aqui*/
-
-.integrante-direita{
-    display: flex;
-    flex-direction: row;
-    width: 55%;
-    max-width: 790px;
-    justify-content: space-around;
-    margin: 65px 0;
-}
-
-.texto-integrante{
-    display: flex;
     flex-direction: column;
-    width: 45%;
+    max-width: 780px;
+    background-color: transparent;
 }
-
-.foto-integrante{
-    width: 40%;
-}
-
-.foto-integrante img{
-    width: 90%;
-    margin-right: 35px;
-}
-
-.texto-integrante ul{
+.card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.icones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
-    width: 300px;
+    width: 100%;
+    height:250px;
+    margin-top: 10vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background-color: transparent;
 }
-
-.icones img{
-    height: 25px;
+/*Blocos de organização de imagem*/
+.card > img{
+    max-width: 35%;
+    align-self: center;
 }
+/*Blocos de organização de texto*/
 
-.icones a{
-    text-decoration: none;
+.envolocroTexto{
+    padding-bottom: 10%;
 }
-
-.icones li{
-    list-style-type: none;
-
-}
-
-h1{
-    text-transform: uppercase;
-}
-
-h2{
-    font-size: 37px;
+.envolocroTexto > h2{
+    font-size:45px;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 10px 0 7px 0;
 }
 
-p{
-    font-size: 20px;
-    width: 90%;
-    text-align: justify;
+.envolocroTexto > p{
+    font-size: 18px;
+    background-color: transparent;
 }
-
-
-@media(max-width:995px){
-
-    .card-apresentacao{
-        flex-direction: column;
-        width: 90%;
+/*alterações 02-07*/
+/*Inclui icones*/
+ul .icones {
+    padding-top: 30px;
+    list-style: none;
+    display: inline-block; 
+}
+ul li .icones{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.icones img{
+    width: 20px;
+    height: 20px;
+}
+.decorativos{
+    padding-left: 20px;
+    width: 150px;
+    height: 25px;
+}
+/*alterações 03/07*/
+/*Alterações de media query*/
+@media(max-width:760px){
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
         align-items: center;
+        width: 100vw;
+        height:35vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-top: 0.5vh;
+        background-color: transparent;
     }
-
-    h1{
-        text-align: center;
-        padding: 10px;
-        font-size: 20px;
-    }
-    
-    em {
-        text-align: center;
-        padding: 10px;
-        font-size: 16px;
-        max-width: 90%;
+    .card > img{
+        height: 15vh;
         align-self: center;
     }
-    
-
-    .integrante-direita{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+    .envolocroTexto > h2{
+        font-size:7vw;
+        font-weight: 900;
+        text-transform: uppercase;    
     }
-
-    .em-baixo{
-        flex-direction: column-reverse;
-
+    .envolocroTexto > p{
+        font-size: 3vw;
     }
-
-    .icones{
-        width:65px;
-        justify-content: center;
+/*query da apresentação*/
+    .cardApresentacao{
+        background-image: url("img/icone.png");
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        background-position-x: 2vw;
+        background-position-y: 5vw;
+        background-color:Transparent;
+        position:relative;
+        display:block;
+        width: 100vw;
+        height: 30vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2vh;
+        margin-bottom: 30vh;
     }
-
+    .cardApresentacao > h1{
+        background-color: transparent;
+        width: 85vw;
+        margin-bottom: 2vh;
+        text-transform: uppercase;
+        font-size: 5vw;
+    }
+    .cardApresentacao > p {
+        background-color: transparent;
+        font-size: 4vw;
+        width: 80vw;
+        text-align: justify;
+    }
+}
+/*Configuração pra iphone 5 */
+@media(max-width:350px){
+    ul .icones {
+        padding-top: 0px;
+        list-style: none;
+        display: inline-block;
+    }
+    ul li .icones{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
     .icones img{
-        margin-bottom: 10px;
-        display: flex;
+        width: 15px;
+        height: 15px;
     }
-
-    .foto-integrante{
-        margin-bottom: 15px;
+    .decorativos{
+        padding-left: 10px;
+        width: 110px;
+        height: 25px;
     }
-
-    .texto{
-        width: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .texto-integrante{
-        width: 78%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    #icones-variados{
-        display: none;
-    }
-    
-    p{
-        text-align: center;
-    }
-
-   .foto-integrante{
-       width: 67%;
-   }
-
-   .correcao-margem{
-       margin-right: -35px;
-
-   }
-    
 }
