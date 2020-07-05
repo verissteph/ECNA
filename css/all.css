@@ -124,7 +124,7 @@ footer {
     z-index: 0;
     display: flex;
     justify-content: center;
-    box-shadow: inset 0px 0px 10px #333533;
+    box-shadow: inset 0px 10px 10px #333533;
 
 }
 
@@ -212,5 +212,9 @@ footer div div p span {
 
     footer div {
         width: 90%;
+    }
+
+    body {
+        background-color: #1B1B1B;
     }
 }
