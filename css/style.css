@@ -325,6 +325,10 @@ button{
         display: flex;
     }
 
+    #precobtcbrl-r{
+        font-size: 22px;
+    }
+
     body {
         background-color: #1B1B1B;
     }
