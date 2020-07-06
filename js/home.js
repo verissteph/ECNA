@@ -5,6 +5,8 @@ query += '?symbol=BTCUSDT';
 
 var url = burl + query;
 
+console.log(url)
+
 var ourRequest = new XMLHttpRequest();
 
 ourRequest.open('GET',url,true);
@@ -14,7 +16,7 @@ ourRequest.onload = function () {
   var btcLastPrice = parseFloat(obj.lastPrice).toFixed(2);
 
   preco = document.getElementById('precobtcbrl')
-  preco.innerHTML = 'U$' + btcLastPrice
+  preco.innerHTML = 'R$' + (btcLastPrice * 5).toFixed(2)
 
   // console.log(ourRequest.responseText);
 }
