@@ -9,6 +9,10 @@ var ourRequest = new XMLHttpRequest();
 
 ourRequest.open('GET',url,true);
 
+/**
+ * Tentando resolver o problema no git
+ */
+
 ourRequest.onload = function () {
   const obj = JSON.parse(ourRequest.responseText);
   var btcLastPrice = parseFloat(obj.lastPrice).toFixed(2);
