@@ -22,3 +22,18 @@ setInterval(function(){
   // Ele faz a requisição na API a cada 1s
 }, 1000)
 
+// Aqui usei a api que tras os dados em dollar
+setInterval(function(){
+  fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT")
+  .then(function(response){
+      return response.json();
+  })
+  .then(function(data){
+      let ultimovalor = data.lastPrice
+      let textoCotacaoUsd = document.getElementById("usd")
+      let textoCotacaoUsdR = document.getElementById("usd-r")
+
+      textoCotacaoUsd.innerHTML = "U$" + parseFloat(ultimovalor).toFixed(2)
+      textoCotacaoUsdR.innerHTML = "U$" + parseFloat(ultimovalor).toFixed(2)
+  })
+}, 1000)
