@@ -109,6 +109,16 @@ ul li .icones{
 /*alterações 03/07*/
 /*Alterações de media query*/
 @media(max-width:995px){
+
+    main{
+        box-sizing: border-box;
+        display: flex;
+        min-height: 100vh;
+        margin-bottom: 20vh;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
     .card{
         display: flex;
         flex-direction: row;
