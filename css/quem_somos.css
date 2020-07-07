@@ -41,6 +41,7 @@
 }
 /*Configuração das caixas*/
 main{
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -117,7 +118,7 @@ ul li .icones{
         height: 100vh;
         padding-left: 3vw;
         padding-right: 3vw;
-        margin-top: 10vh;
+        margin-top: 0vh;
         background-color: transparent;
         flex-wrap: wrap;
         justify-content: center;
@@ -150,28 +151,28 @@ ul li .icones{
     }
 /*query da apresentação*/
     .cardApresentacao{
+        box-sizing: border-box;
         background-color:Transparent;
-        position:relative;
         justify-content: center;
         display:flex;
         flex-wrap: wrap;
         width: 100vw;
         height: 40vh;
-        padding: 10vh 10vw 20vh 10vw;
+        padding: 10vh 10vw 15vh 10vw;
         flex: 1;
     }
 
     .cardApresentacao > img {
         position:initial;
-        width:20vw;
+        max-width:20vw;
         height: auto;
         z-index: -1;
         transform: initial;
+        flex: 1;
     }
 
     .cardApresentacao > h1{
         background-color: transparent;
-        width: 90vw;
         padding-left: 10vw;
         padding-right: 10vw;
         margin-bottom: 5vh;
@@ -184,6 +185,7 @@ ul li .icones{
         font-size: 4vw;
         width: 79vw;
         text-align: justify;
+        flex: 1;
     }
 }
 /*Configuração pra iphone 5 */
@@ -214,14 +216,14 @@ ul li .icones{
     }
     .cardApresentacao{
         background-color:Transparent;
-        position:relative;
-        display:block;
+        display:flex;
+        justify-content: center;
         width: 100vw;
         height: 30vw;
         padding-left: 10vw;
         padding-right: 10vw;
         padding-top: 2vh;
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
     .cardApresentacao > p {
         background-color: transparent;
