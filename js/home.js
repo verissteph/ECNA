@@ -42,7 +42,8 @@ setInterval(function(){
   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT")
   .then(function(response){
       return response.json();
-  })
+  })})
+ 
   .then(function(data){
       let ultimovalor = data.lastPrice
       let volumediausd = data.volume
@@ -58,5 +59,4 @@ setInterval(function(){
   })
   .catch(function(error){
     console.log(error)
-  })
-}, 1000)
+  }), 1000
