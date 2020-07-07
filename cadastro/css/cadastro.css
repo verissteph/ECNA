@@ -36,6 +36,7 @@
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
+    
 }
 
 .caixa__formulario--grupo {
@@ -49,7 +50,7 @@
 #nome {
     margin: .5vw auto;
     width: 30%;
-    padding: .5%;
+    padding: .8%;
     border-radius: 5px;
     border: 1px solid #eee;
     background-color: #1B1B1B;
@@ -70,11 +71,13 @@
 #btn-entrar {
     width: 30%;
     padding: .8%;
-    background-color: #8c00ff;
     color: #fff;
     border-radius: 8px;
     align-self: center;
     justify-content: center;
+    margin-top: .6%;
+    background-color: #D701FF;
+    box-shadow: inset 0px 5px 20px #8c00ff;
 }
 
 .check {
@@ -170,6 +173,7 @@
         width: 45%;
         padding: .95vh;
         margin: 0.8vw auto;
+     
     }
 
     #btn-entrar {
@@ -181,5 +185,101 @@
     }
     .conjunto__check.novidades{
         margin-left: -2vw;
+    }
+}
+@media(max-width:320px){
+    #formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titulo{
+        font-size: .95rem;
+    }
+
+    #formulario--grupo{
+        width: 80%;
+    }
+
+    #nome, 
+    #email,
+    #senha{
+        padding: 2.5%;
+        width: 100%;
+        font-size: .75rem;
+        margin: 2vw 0;
+    }
+    .check{
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+    .conjunto__check.novidades{
+        margin-left: -10vw;
+    }
+    #termos{
+        margin-left: 9%;
+    }
+    .lista-erro li {
+        font-size:0.5rem;
+    }
+    #btn-entrar{
+        margin-bottom: 2%;
+        padding: 2%;
+        width: 100%;
+    }
+}
+@media(min-width:360px){
+    #formulario{
+        padding: 10vw;
+    }
+    #email,
+    #senha,
+    #nome{
+        width: 80%;
+        text-align: center;
+        padding: 1vw;
+        margin: 2vw auto;
+    }
+    .conjunto__check.termos{
+        margin-left: 1.5vw;
+    }
+    .conjunto__check.novidades{
+        margin-left: -13vw;
+    }
+
+    #btn-entrar{
+        width: 80%;
+        padding: 2vw;
+        margin-top: 2vw;
+    }
+}
+
+@media(min-width:768px) {
+    #formulario{
+        padding: 5vw;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    #email, #senha, #nome{
+        font-size: 1rem;
+        padding: 1.5vw;
+        border-radius: 1.2vw;
+        width: 60%;
+    }
+    .conjunto__check.termos{
+        width: 60%;
+    }
+    #termos{
+        margin-left: -6vw;
+    }
+    #termos__label,
+    #novidades__label{
+        font-size: 1.1rem;
+    }
+
+    #btn-entrar{
+        border-radius: 1.8vw;
+        width: 60%;
+        font-size: 1.4rem;
     }
 }
