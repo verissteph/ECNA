@@ -60,7 +60,7 @@
 #nome {
     margin: .5vw auto;
     width: 30%;
-    padding: .5%;
+    padding: .8%;
     border-radius: 5px;
     border: 1px solid #eee;
     background-color: #1B1B1B;
@@ -85,6 +85,7 @@
     border-radius: 8px;
     align-self: center;
     justify-content: center;
+    padding: .8%;
 }
 
 .check {

@@ -235,8 +235,8 @@ h3{
 
 }
 
-.content-formulario img{
-}
+/* .content-formulario img{
+} */
 
 .content-formulario section{
     flex-grow: 1;
@@ -325,6 +325,10 @@ button{
         display: flex;
     }
 
+    #precobtcbrl-r{
+        font-size: 22px;
+    }
+
     body {
         background-color: #1B1B1B;
     }
@@ -344,6 +348,7 @@ button{
     .content_r {
         display: flex;
         justify-content: space-between;
+        /* align-items: center; */
     }
 
     .label_r, .precobtcusd {
@@ -409,6 +414,7 @@ button{
     article.content_lead h2 {
         font-weight: bolder;
         text-transform: uppercase;
+        font-size: 20px;
     }
 
     article.content_lead p {

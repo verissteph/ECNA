@@ -25,8 +25,8 @@
                 </ul>
             </div>
             <div class="login-cadastro">
-                <a class="entrar" href="login.html">Entrar</a>
-                <a class="criar_conta" href="cadastro.html">Crie sua conta</a>
+                <a class="entrar" href="/login/login.html">Entrar</a>
+                <a class="criar_conta" href="/cadastro/cadastro.html">Crie sua conta</a>
             </div>
         </nav>
     </header>
@@ -63,11 +63,11 @@
         <h3>
             btc/usdt
         </h3>
-        <h1>
+        <h1 id="precobtcbrl">
             9,258.42
         </h1>
-        <h3>
-            €8,225.64
+        <h3 id="usd">
+            U$8,225.64
         </h3>
     </div>
 
@@ -88,7 +88,7 @@
                 <h3>
                     Min do dia
                 </h3>
-                <em>
+                <em id="maisBaixo">
                     R$9,000.42
                 </em>
             </div>
@@ -96,7 +96,7 @@
                 <h3>
                     Max do dia
                 </h3>
-                <em>
+                <em id="maisAlto">
                     R$9,000.42
                 </em>
             </div>
@@ -121,7 +121,7 @@
                     <em>Volume</em>(24h)
                 </h3>
                 <em>
-                    <em>525,217,352.21</em> USDT
+                    <em id="volume">525,217,352.21</em>
                 </em>
             </div>
         </div>
@@ -158,24 +158,24 @@
         <h3 class="label_cotacao label_r">Cotação</h3>
         <article class="content_r content_cotacao">
             <img src="img/btc.png" width="30px" height="30px" alt="logo do bitcoin">
-            <h2 class="precobtcbrl">R$99.999<span>,99</span></h2>
-            <h3 class="precobtcusd">U$99.999<span>,99</span></h3>
+            <h2 id="precobtcbrl-r">R$99.999</h2>
+            <h3 class="precobtcusd" id="usd-r">U$99.999<span>,99</span></h3>
         </article>
     </section>
     <section class="volume_r">
         <h3 class="label_volume label_r">Volume (24h)</h3>
         <article class="content_r content_volume">
             <img src="img/vol.png" width="30px" height="30px" alt="logo do bitcoin">
-            <h2 class="precobtcbrl">R$99.999<span>,99</span></h2>
-            <h3 class="precobtcusd">U$99.999<span>,99</span></h3>
+            <h2 class="precobtcbrl" id="volume-r">R$99.999<span>,99</span></h2>
+            <h3 class="precobtcusd" id="volumeusd-r">U$99.999<span>,99</span></h3>
         </article>
     </section>
     <section class="mm_r">
         <h3 class="label_mm label_r">Máxima e Mínima</h3>
         <article class="content_r content_mm">
             <img src="img/mm.png" width="25px" height="30px" alt="logo do bitcoin">
-            <h2 class="precobtcbrl preco_vol">R$99.999<span>,99</span></h2>
-            <h2 class="precobtcbrl preco_vol">R$99.999<span>,99</span></h2>
+            <h2 class="precobtcbrl preco_vol" id="maisAlto-r">R$99.999<span>,99</span></h2>
+            <h2 class="precobtcbrl preco_vol" id="maisBaixo-r">R$99.999<span>,99</span></h2>
         </article>
     </section>
     <section class="lead_r">
@@ -221,6 +221,8 @@
     </footer>
 
     <!--O FOOTER ACABA COMEÇA AQUI-->
+
+    <script src="js/home.js"></script>
 
 </body>
 
