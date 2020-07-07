@@ -348,6 +348,7 @@ button{
     .content_r {
         display: flex;
         justify-content: space-between;
+        /* align-items: center; */
     }
 
     .label_r, .precobtcusd {
