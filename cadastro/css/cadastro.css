@@ -187,6 +187,7 @@
         margin-left: -2vw;
     }
 }
+
 @media(max-width:320px){
     #formulario{
         width: 80%;
@@ -283,3 +284,4 @@
         font-size: 1.4rem;
     }
 }
+
