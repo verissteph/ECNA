@@ -36,8 +36,8 @@ var chart = new Chart(ctx, {
         labels: segundos,
         datasets: [{
             label: 'Bitcoin - Dollar',
-            backgroundColor: '#8C00FF',
-            borderColor: 'rgb(0, 0, 0, 0.5)',
+            backgroundColor: '#8c00ff',
+            borderColor: 'none',
             data: historicoPrecos
         }]
     },
