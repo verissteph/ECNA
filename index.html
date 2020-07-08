@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
     <title>ECNA</title>
 </head>
 
@@ -53,22 +54,27 @@
     <!-- A COTAÇÃO COMEÇA AQUI-->
 
     <div class="cotacao">
-        <div class="titulo">
-            <h2>
-                <em>Cotação</em>
-            </h2>
-            <div class="linha">
+        <div id="conteudo-principal">
+            <div class="titulo">
+                <h2>
+                    <em>Cotação</em>
+                </h2>
+                <div class="linha">
+                </div>
             </div>
+            <h3>
+                btc/usdt
+            </h3>
+            <h1 id="precobtcbrl">
+                9,258.42
+            </h1>
+            <h3 id="usd">
+                U$8,225.64
+            </h3>
+            <canvas id="myChart"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+            <script src="js/app.js"></script>
         </div>
-        <h3>
-            btc/usdt
-        </h3>
-        <h1 id="precobtcbrl">
-            9,258.42
-        </h1>
-        <h3 id="usd">
-            U$8,225.64
-        </h3>
     </div>
 
     <!-- A COTAÇÃO ACABA AQUI-->

@@ -66,16 +66,30 @@
 
 .cotacao{
     width: 100%;
-    height: 450px;    
+    height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     background-color:#8c00ff;
-    padding: 1% 0;
     box-shadow: inset -2px 9px 22px black;
     z-index: 1;
+}
+
+#conteudo-principal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Grafuco aqui*/
+
+canvas{
+    margin-top: 25px;
+    width: 100%;
+    background-color: #1b1b1b ;
+    padding: 0px;
+
 }
 
 
