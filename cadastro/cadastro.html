@@ -10,37 +10,28 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <div>
-                <a href="/index.html"><img src="/img/logo-ecna.png" alt="Logo_Ecna"></a>
+            <div class="logo-header">
+                <a href="index.html"><img src="/img/logo-ecna.png" alt="Logo_Ecna"></a>
             </div>
-            <div class="menu_de_navegacao">
-                <ul class="paginas">
-                    <a href="/quem_somos.html">
-                        <li>Quem somos</li>
-                    </a>
-                    <a href="#">
-                        <li>Contato</li>
-                    </a>
-                    <a href="/bitcoin.html">
-                        <li>O que é o bitcoin</li>
-                    </a>
+            <div class="paginas">
+                <ul>
+                    <li><a href="quem_somos.html">Quem somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="bitcoin.html">O que é o bitcoin</a></li>
                 </ul>
-                <ul class="login-cadastro">
-                    <a href="/login/login.html">
-                        <li class="entrar ">Entrar</li>
-                    </a>
-                    <a href="/cadastro/cadastro.html">
-                        <li class="criar_conta hide">Crie sua conta</li>
-                    </a>
-                </ul>
+            </div>
+            <div class="login-cadastro">
+                <a class="entrar" href="/login/login.html">Entrar</a>
+                <a class="criar_conta" href="/cadastro/cadastro.html">Crie sua conta</a>
             </div>
         </nav>
     </header>
     <!-- Formulário -->
     <main class="caixa__formulario">
-        <form id="formulario">
+        <form id="formulario" method="post" data-netlify="true" name="formCadastro">
             <h2 class="titulo">Crie sua conta</h2>
             <div class="caixa-erro" id="caixa-erro">
                 <ul class="lista-erro">
@@ -67,6 +58,7 @@
         </form>
     </main>
     <!-- Fim do formulário -->
+
     <footer>
         <div>
             <div class="tab1">
