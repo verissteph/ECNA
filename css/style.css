@@ -10,6 +10,14 @@
     box-shadow: inset -2px 9px 22px #1f1f1f;
     z-index: 4;
 }
+.oculto {
+    display: none;
+}
+
+#h3center {
+    display: flex;
+    justify-content: center;
+}
 
 .banner{
     width: 62%;
