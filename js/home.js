@@ -28,7 +28,6 @@ setInterval(function(){
   .then(function(data){
       // aqui acesso dos dados da api e passo para uma variavel
       let ultimovalor = data.ticker.last
-      let volumedia = data.ticker.vol
       let valorMaxFinal = data.ticker.high
       let valorMinFinal = data.ticker.low
 
