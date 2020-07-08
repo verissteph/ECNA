@@ -56,3 +56,33 @@ var chart = new Chart(ctx, {
 setInterval( () => {
   chart.update()
 }, 1000);
+
+var ctxR = document.getElementById('myChartR').getContext('2d');
+var chartR = new Chart(ctxR, {
+    // The type of chart we want to create
+    type: 'line',
+    // The data for our dataset
+    data: {
+        labels: segundos,
+        datasets: [{
+            label: 'Bitcoin - Dollar',
+            backgroundColor: '#8c00ff',
+            borderColor: 'none',
+            data: historicoPrecos
+        }]
+    },
+    // Configuration options go here
+    options: { 
+      scales: { 
+        yAxes: [{ 
+          ticks: { 
+            beginAtZero: false 
+          } 
+        }] 
+      } 
+    } 
+});
+
+setInterval( () => {
+  chartR.update()
+}, 1000);

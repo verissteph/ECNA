@@ -82,6 +82,11 @@
     align-items: center;
 }
 
+#grafico_container{
+    max-width: 100%;
+    display: none;
+}
+
 /*Grafuco aqui*/
 
 canvas{
@@ -352,6 +357,10 @@ button{
 
     #precobtcbrl-r{
         font-size: 22px;
+    }
+
+    #grafico_container{
+        display: flow-root;
     }
 
     body {
