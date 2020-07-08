@@ -1,3 +1,5 @@
+// MONTA A URL DA API
+
 var burl = 'https://api.binance.com';
 var query = '/api/v1/ticker/24hr';
 
@@ -5,12 +7,14 @@ query += '?symbol=BTCUSDT';
 
 var url = burl + query;
 
+// CRIA AS VARIAVEIS QUE ARMAZENAM OS DADOS PARA COMPOR OS GRAFICOS
+
 var historicoPrecos = [];
-// var historicoPrecos = [1, 2, 3, 4]
 
 var segundos = []
-// var segundos = ['a', 'b', 'c', 'd']
 
+// FAZ A REQUISICAO PARA A API
+// E ADICIONA OS NOVOS VALORES PARA AS VARIAVEIS
 
 setInterval( () => {
   fetch(url)
@@ -26,6 +30,8 @@ setInterval( () => {
     // console.log(segundos)
   })
 }, 1000);
+
+// GERA O GRAFICO DO DESKTOP
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -53,9 +59,18 @@ var chart = new Chart(ctx, {
     } 
 });
 
+// ATUALIZA O GRAFICO DA HOME
+
 setInterval( () => {
   chart.update()
+  if (segundos.length > 60) {
+    segundos.shift();
+    historicoPrecos.shift();
+  }
 }, 1000);
+
+
+// GERA O GRAFICO DO MOBILE
 
 var ctxR = document.getElementById('myChartR').getContext('2d');
 var chartR = new Chart(ctxR, {
@@ -83,6 +98,13 @@ var chartR = new Chart(ctxR, {
     } 
 });
 
+// ATUALIZA O GRAFICO DO MOBILE
+
 setInterval( () => {
   chartR.update()
+  if (segundos.length > 60) {
+    segundos.shift();
+    historicoPrecos.shift();
+  }
 }, 1000);
+
