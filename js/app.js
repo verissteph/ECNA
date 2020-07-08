@@ -22,8 +22,8 @@ setInterval( () => {
     let preco = data.lastPrice;
     historicoPrecos.push(preco);
     segundos.push('');
-    console.log(historicoPrecos)
-    console.log(segundos)
+    // console.log(historicoPrecos)
+    // console.log(segundos)
   })
 }, 1000);
 
