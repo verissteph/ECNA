@@ -10,6 +10,8 @@ setInterval(function(){
       // aqui acesso dos dados da api e passo para uma variavel
       let ultimovalor = data.ticker.last
       let volumedia = data.ticker.vol
+      let valorMaxFinal = data.ticker.high
+      let valorMinFinal = data.ticker.low
       // esquema para conseguir quebrar a parte inteira e a parte decimal para o responsivo (Will)
       let volumedia_split = volumedia.split(".")
       // aqui acesso o h1 atraves de u id que adicionei no html
@@ -19,6 +21,15 @@ setInterval(function(){
       // Aqui acesso o em do volume transacional no dia (will)
       let textoVolume = document.getElementById("volume")
       let textoVolumeR = document.getElementById("volume-r")
+
+      //valor maximo na variação - ellen
+      let maximoValor = document.querySelector('#maisAlto')
+       maximoValor.innerText = "R$" + parseFloat(valorMaxFinal).toFixed(2);
+
+       //valor minimo na variação - ellen
+      let minimoValor = document.querySelector('#maisBaixo')
+      minimoValor.innerHTML = "R$" + parseFloat(valorMinFinal).toFixed(2);
+
 
       // Por ultimo eu adiciono esse elementos chamados na API pra dentro do texto
       textoCotacao.innerHTML = "R$" + parseFloat(ultimovalor).toFixed(2)
@@ -37,13 +48,14 @@ setInterval(function(){
   // Ele faz a requisição na API a cada 1s
 }, 1000)
 
+
+
 // Aqui usei a api que tras os dados em dollar
 setInterval(function(){
   fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT")
   .then(function(response){
       return response.json();
-  })})
- 
+  })
   .then(function(data){
       let ultimovalor = data.lastPrice
       let volumediausd = data.volume
@@ -58,5 +70,7 @@ setInterval(function(){
 
   })
   .catch(function(error){
-    console.log(error)
-  }), 1000
+    console.log(error);
+  })
+}, 1000)
+
