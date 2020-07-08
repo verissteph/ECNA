@@ -148,11 +148,14 @@ h3{
 }
 
 .min-max-conteudo h3{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vw;
     margin-top: 0px;
 }
 
 .min-max em {
-    font-size: 4vh;
+    font-size: 2vw;
     font-weight: bolder;
 }
 
