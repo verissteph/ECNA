@@ -66,6 +66,7 @@ article{
     padding-right: 4vw;
     background-color: transparent;
     box-shadow: -6px 22px 50px rgba(0,0,0,70%) ;
+    border-radius: 2%;
 }
 /*Blocos de organização de imagem*/
 .card > img{
