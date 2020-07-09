@@ -10,44 +10,35 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <div>
+            <div class="logo-header">
                 <a href="/index.html"><img src="/img/logo-ecna.png" alt="Logo_Ecna"></a>
             </div>
-            <div class="menu_de_navegacao">
-                <ul class="paginas">
-                    <a href="/quem_somos.html">
-                        <li>Quem somos</li>
-                    </a>
-                    <a href="#">
-                        <li>Contato</li>
-                    </a>
-                    <a href="/bitcoin.html">
-                        <li>O que é o bitcoin</li>
-                    </a>
+            <div class="paginas">
+                <ul>
+                    <li><a href="/quem_somos.html">Quem somos</a></li>
+                    <li><a href="/contact.html">Contato</a></li>
+                    <li><a href="/bitcoin.html">O que é o bitcoin</a></li>
                 </ul>
-                <ul class="login-cadastro">
-                    <a href="/login/login.html">
-                        <li class="entrar hide">Entrar</li>
-                    </a>
-                    <a href="/cadastro/cadastro.html">
-                        <li class="criar_conta">Crie sua conta</li>
-                    </a>
-                </ul>
+            </div>
+            <div class="login-cadastro">
+                <a class="entrar" href="/login/login.html">Entrar</a>
+                <a class="criar_conta" href="/cadastro/cadastro.html">Crie sua conta</a>
             </div>
         </nav>
     </header>
     <!-- Formulário -->
     <main class="caixa__formulario">
-        <form id="formulario">
+        <form id="formulario" name="formLogin" data-netlify="true">
             <h2 class="titulo">Acesse sua conta</h2>
             <div class="caixa-erro" id="caixa-erro">
                 <ul class="lista-erro">
                 </ul>
             </div>
             <div class="caixa__formulario--grupo" id="formulario--grupo">
-                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                 <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
             </div>
             <div class="caixa__formulario--btn">
@@ -56,6 +47,7 @@
         </form>
     </main>
     <!-- Fim do formulário -->
+
     <footer>
         <div>
             <div class="tab1">
@@ -74,7 +66,10 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/login/js/login.js"></script>
+    <script src="/login/js/jquery.js"></script>
 </body>
 
-</html>
+</html>,

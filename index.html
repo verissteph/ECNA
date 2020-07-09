@@ -16,13 +16,13 @@
     <header>
         <nav>
             <div class="logo-header">
-                <a href="index.html"><img src="img/logo-ecna.png" alt="Logo_Ecna"></a>
+                <a href="index.html"><img src="/img/logo-ecna.png" alt="Logo_Ecna"></a>
             </div>
             <div class="paginas">
                 <ul>
-                    <li><a href="quem_somos.html">Quem somos</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                    <li><a href="bitcoin.html">O que é o bitcoin</a></li>
+                    <li><a href="/quem_somos.html">Quem somos</a></li>
+                    <li><a href="/contact.html">Contato</a></li>
+                    <li><a href="/bitcoin.html">O que é o bitcoin</a></li>
                 </ul>
             </div>
             <div class="login-cadastro">
@@ -48,7 +48,7 @@
                 <p>Seu investimento totalmente sobre seu controle.</p>
             </section>
             <div>
-                <img src="img/imagem_banner.png" alt="imagem_do_banner">
+                <img src="/img/imagem_banner.png" alt="imagem_do_banner">
             </div>
         </div>
     </div>
@@ -145,7 +145,7 @@
     <div class="formulario">
         <div class="content-formulario">
             <div>
-                <img src="img/CELULAR_desk.png" alt="celular-alerta">
+                <img src="/img/CELULAR_desk.png" alt="celular-alerta">
             </div>
             <section>
                 <em>000101010001010100</em>
@@ -168,7 +168,7 @@
     <section class="cotacao_r">
         <h3 class="label_cotacao label_r">Cotação</h3>
         <article class="content_r content_cotacao">
-            <img src="img/btc.png" width="30px" height="30px" alt="logo do bitcoin">
+            <img src="/img/btc.png" width="30px" height="30px" alt="logo do bitcoin">
             <h2 id="precobtcbrl-r">R$99.999</h2>
             <h3 class="precobtcusd" id="usd-r">U$99.999<span>,99</span></h3>
         </article>
@@ -176,7 +176,7 @@
     <section class="volume_r">
         <h3 class="label_volume label_r">Volume (24h)</h3>
         <article class="content_r content_volume">
-            <img src="img/vol.png" width="30px" height="30px" alt="logo do bitcoin">
+            <img src="/img/vol.png" width="30px" height="30px" alt="logo do bitcoin">
             <h2 class="precobtcbrl" id="volume-r">R$99.999<span>,99</span></h2>
             <h3 class="precobtcusd" id="volumeusd-r">U$99.999<span>,99</span></h3>
         </article>
@@ -184,13 +184,13 @@
     <section class="mm_r">
         <h3 class="label_mm label_r">Máxima e Mínima</h3>
         <article class="content_r content_mm">
-            <img src="img/mm.png" width="25px" height="30px" alt="logo do bitcoin">
+            <img src="/img/mm.png" width="25px" height="30px" alt="logo do bitcoin">
             <h2 class="precobtcbrl preco_vol" id="maisAlto-r">R$99.999<span>,99</span></h2>
             <h2 class="precobtcbrl preco_vol" id="maisBaixo-r">R$99.999<span>,99</span></h2>
         </article>
     </section>
     <section class="lead_r">
-        <img src="img/celular_alerta.png" alt="celular">
+        <img src="/img/celular_alerta.png" alt="celular">
         <article class="content_lead">
             <h2>Cadastre-se e receba todas as novidades</h2>
             <p>Fique sempre atualizado sobre as novidades do mercado de criptomoedas</p>
@@ -198,9 +198,9 @@
     </section>
     <section class="form_r">
         <main class="caixa__formulario">
-            <form id="formulario">
+            <form id="formulario" data-netlify="true" name="formHome" action="#">
                 <div class="form_cadastre-se" id="form_cadastre-se">
-                    <input type="text" id="name" placeholder="Nome">
+                    <input type="text" name="name" id="name" placeholder="Nome">
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="form_cadastre-se_btn">
@@ -232,8 +232,9 @@
     </footer>
 
     <!--O FOOTER ACABA COMEÇA AQUI-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/jquery.js"></script>
 
 </body>
 

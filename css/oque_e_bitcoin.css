@@ -1,0 +1,133 @@
+/* Início da página o que é bitcoin */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    font-family: "Montserrat", sans-serif;
+    color: #ffff;
+}
+/*Configuração da caixa principal*/
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Configuração do topo*/
+article.enunciado-topo{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #8c00ff;
+    box-shadow: inset -2px 9px 22px black;
+}
+    img.enunciado-icone{
+        width: 8.5vw;
+        align-self: center;
+        height: auto;
+        background-color: transparent;
+        transform: translate(30%, 0)
+    }
+    .enunciado-topo > .enunciado-texto{
+        font-style: normal;
+        align-self: center;
+        width: 30%;
+        background-color: transparent;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+        .enunciado-texto > h1{
+            background-color: transparent;
+            font-size: 2vw;
+        }
+/*Configuração do texto*/
+
+section.textoBitcoin{
+    /*Essa regra configura o campo do texto princiapal*/
+    margin-top: -6vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    justify-content: center;
+    margin-bottom: 17vh;
+}
+    article.texto-principal > h2{
+        font-size: 55px ;
+    }
+    article.texto-principal > p{
+        margin-top: 2vh;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    article.texto-principal > h3{
+        margin-top: 1vh;
+        font-size: 20px ;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+/*Configura o vídeo do youtube*/
+    .youtube-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    .youtube-container > iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+/*MEDIA  QUERY!!!!!!!!!!!!!!!!!!!*/
+@media(max-width:995px){
+    /*Query do topo*/
+    article.enunciado-topo{
+        height: 50vh;
+    }
+        img.enunciado-icone{
+            width: 20vw;
+        }
+        .enunciado-topo > .enunciado-texto{
+            width: 100%;
+        }
+            .enunciado-texto > h1{
+                font-size: 5vw;
+            }
+    /*Query do texto principal*/
+            section.textoBitcoin{
+                /*Essa regra configura o campo do texto princiapal*/
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+                article.texto-principal > h2{
+                    font-size: 4vw;
+                }
+                article.texto-principal > p{
+                    margin-top: 2vh;
+                    font-size: 3vw;
+                    text-align: justify;
+                    text-justify:distribute;
+                }
+                article.texto-principal > h3{
+                    margin-top: 1vh;
+                    font-size: 3.2vw ;
+                }
+}
+/*Media query dispositivos menores*/
+
+@media(max-width:350px)
+{
+    img.enunciado-icone{
+        width: 50vw;
+    }
+        .enunciado-texto > h1{
+            font-size: 5.5vw;
+        }
+}
+/*APRENDE A COMENTAR A PORRA DO CSS KRL*/

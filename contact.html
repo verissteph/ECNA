@@ -41,7 +41,7 @@
                         Ficou alguma dúvida?
                     </h1>
                     <em>
-                        Entre em contato conosc, oferecemos suporte para nossos clientes
+                        Entre em contato conosco, oferecemos suporte para nossos clientes
                     </em>
                 </div>
             </div>
@@ -50,10 +50,10 @@
         <!-- <div onmouseover = "mouseOver()" class="msgsmall">-->
         <!-- aqui é o formulário -->
         <div class="form-contato">
-            <form name="contato" id="contato">
-                <input class="formulario-contato" type="name" id="nome-contato" placeholder="Nome" required>
+            <form name="contato" id="contato" data-netlify="true">
+                <input class="formulario-contato" name="name" type="name" id="nome-contato" placeholder="Nome" required>
                 <br>
-                <input class="formulario-contato" type="email" id="email-contato" placeholder="Email" required>
+                <input class="formulario-contato" name="email" type="email" id="email-contato" placeholder="Email" required>
                 <br>
                 <textarea class="formulario-contato" name="mensagem" id="textarea" rows="10" cols="40" placeholder="Insira sua mensagem" required></textarea>
                 <br>
@@ -76,6 +76,9 @@
             <div class="tab3"><p class="sobre"><span>AJUDA</span><br>Taxas<br>Termos e políticas<br>Central de ajuda</p></div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/contact.js"></script>
+    <script src="/js/jquery.js"></script>
 </body>
 </html>
     
