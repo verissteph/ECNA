@@ -84,6 +84,7 @@
 
 #grafico_container{
     display: none;
+    width: 100%;
 }
 
 /*Grafuco aqui*/
