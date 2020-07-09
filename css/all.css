@@ -235,6 +235,14 @@ footer div div p span {
         flex-wrap: wrap;
     }
 
+    .tab2{
+        padding-right: 10px;
+    }
+
+    .tab3{
+        padding-left: 10px;
+    }
+
     body {
         background-color: #1B1B1B;
     }
