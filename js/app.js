@@ -42,21 +42,43 @@ var chart = new Chart(ctx, {
         labels: segundos,
         datasets: [{
             label: 'Bitcoin - Dollar',
-            backgroundColor: '#8c00ff',
-            borderColor: 'none',
-            data: historicoPrecos
+            backgroundColor: 'rgba(255,255,255,0)',
+            borderColor: '#f1f1f1',
+            fontColor: "#f1f1f1",
+            pointStyle: 'rectRounded',
+            borderDash: [13,10],
+            borderWidth: 3,
+            tension: 0.3,
+            radius: 1.7,
+            data: historicoPrecos,
+            borderWidth: 2,
+            angle:0,
+            borderAlign: 'center',
+            color: ["#fff","#fff"]
         }]
     },
     // Configuration options go here
-    options: { 
-      scales: { 
-        yAxes: [{ 
-          ticks: { 
-            beginAtZero: false 
-          } 
-        }] 
-      } 
-    } 
+    options: {
+        scales: {
+          yAxes: [{
+              ticks: {
+                  fontColor: '#fff',
+                  zeroLineWidth: 1
+              }
+          }]
+      },
+      
+      legend: {
+
+        labels: {
+          fontColor: "#fff",
+          fontSize: 16,
+          fontStyle: "bold",
+          borderColor: '#f1f1f1'
+
+        } 
+      }
+    }
 });
 
 // ATUALIZA O GRAFICO DA HOME
@@ -81,7 +103,7 @@ var chartR = new Chart(ctxR, {
         labels: segundos,
         datasets: [{
             label: 'Bitcoin - Dollar',
-            backgroundColor: '#8c00ff',
+            backgroundColor: '#ffffff',
             borderColor: 'none',
             data: historicoPrecos
         }]
