@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100%;
     background-color:#1b1b1b;
-    z-index: 100;
+    z-index: 0;
     box-shadow:-2px 9px 22px black ;
     padding-top: 20px;
 }
@@ -99,7 +99,7 @@ button{
         flex-direction: column;
         width: 100%;
         background-color:#1b1b1b;
-        z-index: 100;
+        z-index: 0;
         box-shadow:-2px 9px 22px black ;
         padding-top: 20px;
     }
