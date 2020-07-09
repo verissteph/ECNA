@@ -76,14 +76,13 @@
 }
 
 #conteudo-principal{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #grafico_container{
-    max-width: 100%;
     display: none;
 }
 
@@ -91,9 +90,9 @@
 
 canvas{
     margin-top: 25px;
-    width: 100%;
-    background-color: #1b1b1b ;
+    width: 50%;
     padding: 0px;
+    height: 400px;
 
 }
 
