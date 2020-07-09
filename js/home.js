@@ -39,10 +39,17 @@ setInterval(function(){
       //valor maximo na variação - ellen
       let maximoValor = document.querySelector('#maisAlto')
        maximoValor.innerText = "R$" + parseFloat(valorMaxFinal).toFixed(2);
+
+       let maximoValorRes = document.querySelector('#maisAlto-r');
+       maximoValorRes.innerText = "R$" + parseFloat(valorMaxFinal).toFixed(2);
+
       
        //valor minimo na variação - ellen
       let minimoValor = document.querySelector('#maisBaixo')
       minimoValor.innerHTML = "R$" + parseFloat(valorMinFinal).toFixed(2);
+
+      let minimoValorRes = document.querySelector('#maisBaixo-r');
+      minimoValorRes.innerHTML = "R$" + parseFloat(valorMinFinal).toFixed(2);
 
       // Por ultimo eu adiciono esse elementos chamados na API pra dentro do texto
       textoCotacao.innerHTML = "R$" + parseFloat(ultimovalor).toFixed(2)

@@ -22,5 +22,6 @@ formulario.addEventListener("submit", function (e) {
     } else if (senha.value.length < 7 && senha.value !== '') {
         listaDeErros.innerHTML += "<li>" + "Deve ter no mínimo 6 caracteres";
     }
-
 });
+
+
