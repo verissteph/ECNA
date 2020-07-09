@@ -119,20 +119,26 @@ footer {
     /* position: absolute; */
     /* margin-top: 127.5vh; */
     bottom: 0px;
-    height: 236px;
     padding-top: 30px;
+    padding-right: 175px;
+    padding-bottom: 30px;
     z-index: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     box-shadow: inset 0px 10px 10px #333533;
 
 }
 
 footer div {
-    width: 62%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     max-width: 1170px;
+}
+
+#sobre-ajuda{
+    display: flex;
+    flex-direction: row;
 }
 
 footer div div {
@@ -210,11 +216,37 @@ footer div div p span {
         width: 21vw
     }
 
+    footer{
+        flex-wrap: wrap;
+        padding-right: 0px;
+    }
+
     footer div {
-        width: 90%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre-ajuda{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 60%;
+        flex-wrap: wrap;
     }
 
     body {
         background-color: #1B1B1B;
     }
+
+}
+
+@media (max-width: 320px){
+    #sobre-ajuda{
+        height: 340px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
 }
