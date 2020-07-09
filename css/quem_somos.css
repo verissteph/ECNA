@@ -82,13 +82,13 @@ article{
 }
 
 .envolocroTexto > p{
-    font-size: 18px;
+    font-size: 14px;
     background-color: transparent;
+    max-width: 380px;
 }
 /*alterações 02-07*/
 /*Inclui icones*/
 ul .icones {
-    padding-top: 30px;
     list-style: none;
     display: inline-block; 
 }
@@ -98,12 +98,12 @@ ul li .icones{
     height: 30px;
 }
 .icones img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 .decorativos{
     padding-left: 20px;
-    width: 150px;
+    width: 200px;
     height: 25px;
 }
 /*alterações 03/07*/
@@ -118,7 +118,6 @@ ul li .icones{
         flex-direction: column;
         max-width: 100vw;
     }
-
     .card{
         display: flex;
         flex-direction: row;
@@ -157,6 +156,12 @@ ul li .icones{
         width: 80vw;
         font-size: 3.5vw;
         align-self: center;
+    }
+    /*icones*/
+    ul .icones {
+        padding-top: 30px;
+        list-style: none;
+        display: inline-block; 
     }
 /*query da apresentação*/
     .cardApresentacao{
