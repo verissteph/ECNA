@@ -17,6 +17,7 @@
     padding-left: 5vw;
     padding-top: 20px;
     z-index: 1;
+    border-bottom: 3px solid #8c00ff;
 }
 .cardApresentacao > img {
     position: absolute;
@@ -25,7 +26,7 @@
     z-index: -1;
     transform: translate(-80%, 12%);
 }
-
+/*Apresetação organização de texto*/
 .cardApresentacao > h1{
     background-color: transparent;
     padding-top: 20px;
@@ -59,11 +60,12 @@ article{
     justify-content: left;
     align-items: center;
     width: 100%;
-    height:250px;
+    height:350px;
     margin-top: 10vh;
     padding-left: 4vw;
     padding-right: 4vw;
     background-color: transparent;
+    box-shadow: -6px 22px 50px rgba(0,0,0,70%) ;
 }
 /*Blocos de organização de imagem*/
 .card > img{
@@ -71,20 +73,22 @@ article{
     align-self: center;
 }
 /*Blocos de organização de texto*/
-
 .envolocroTexto{
-    padding-bottom: 10%;
+    transform: translate(0, -10%);
 }
 .envolocroTexto > h2{
     font-size:45px;
     font-weight: 900;
     text-transform: uppercase;
 }
-
 .envolocroTexto > p{
     font-size: 14px;
     background-color: transparent;
     max-width: 380px;
+}
+q {
+    font-style: italic;
+    background-color: transparent;
 }
 /*alterações 02-07*/
 /*Inclui icones*/
@@ -109,7 +113,45 @@ ul li .icones{
 /*alterações 03/07*/
 /*Alterações de media query*/
 @media(max-width:995px){
+/*query da apresentação*/
+    .cardApresentacao{
+        box-sizing: border-box;
+        background-color:Transparent;
+        justify-content: center;
+        display:flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 40vh;
+        padding: 10vh 10vw 15vh 10vw;
+        flex: 1;
+        border-bottom: none;
+    }
+        .cardApresentacao > img {
+        position:initial;
+        max-width:20vw;
+        height: auto;
+        z-index: -1;
+        transform: initial;
+        flex: 1;
+    }
+    .cardApresentacao > h1{
+        background-color: transparent;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 5vh;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .cardApresentacao > p {
+        background-color: transparent;
+        font-size: 4vw;
+        width: 79vw;
+        text-align: justify;
+        flex: 1;
+}   
 
+    /*configuração de caixas query*/
     main{
         box-sizing: border-box;
         display: flex;
@@ -131,6 +173,7 @@ ul li .icones{
         flex-wrap: wrap;
         justify-content: center;
         flex: 1;
+        box-shadow: none;
     }
     .envolocroTexto{
         padding-bottom: 10vh;
@@ -138,6 +181,7 @@ ul li .icones{
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
+        transform: none;
     }
     .right {
         flex-wrap: wrap-reverse;
@@ -146,6 +190,7 @@ ul li .icones{
         width: 100vw;
         align-self: center;
     }
+    /*configuração de texto query*/
     .envolocroTexto > h2{
         width: 100vw;
         font-size:7vw;
@@ -162,44 +207,6 @@ ul li .icones{
         padding-top: 30px;
         list-style: none;
         display: inline-block; 
-    }
-/*query da apresentação*/
-    .cardApresentacao{
-        box-sizing: border-box;
-        background-color:Transparent;
-        justify-content: center;
-        display:flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 40vh;
-        padding: 10vh 10vw 15vh 10vw;
-        flex: 1;
-    }
-
-    .cardApresentacao > img {
-        position:initial;
-        max-width:20vw;
-        height: auto;
-        z-index: -1;
-        transform: initial;
-        flex: 1;
-    }
-
-    .cardApresentacao > h1{
-        background-color: transparent;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        margin-bottom: 5vh;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 5vw;
-    }
-    .cardApresentacao > p {
-        background-color: transparent;
-        font-size: 4vw;
-        width: 79vw;
-        text-align: justify;
-        flex: 1;
     }
 }
 /*Configuração pra iphone 5 */
