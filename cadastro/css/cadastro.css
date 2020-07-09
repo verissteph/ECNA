@@ -34,7 +34,7 @@
 .titulo {
     margin-top: 1.5vw;
     font-weight: bold;
-    font-size: 5.125vw;
+    font-size: 1.5rem;
     text-transform: uppercase;
     
 }
@@ -83,7 +83,6 @@
     background-color: #D701FF;
     box-shadow: inset 0px 5px 20px #8c00ff; */
 
-    background-color: #D701FF;
     height: 45px;
     width: 80%;
     padding: 5px;
@@ -91,6 +90,8 @@
     margin: 20px 0px;
     border-radius: 7px;
     border: none;
+    background-color: #D701FF;
+    box-shadow: inset 0px 5px 20px #8c00ff;
 }
 
 .check {
