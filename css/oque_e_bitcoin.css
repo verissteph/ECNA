@@ -26,7 +26,7 @@ article.enunciado-topo{
     box-shadow: inset -2px 9px 22px black;
 }
     img.enunciado-icone{
-        width: 8.5vw;
+        width: 150px;
         align-self: center;
         height: auto;
         background-color: transparent;
@@ -42,7 +42,7 @@ article.enunciado-topo{
     }
         .enunciado-texto > h1{
             background-color: transparent;
-            font-size: 2vw;
+            font-size: 32px;
         }
 /*Configuração do texto*/
 
