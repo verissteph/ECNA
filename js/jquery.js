@@ -16,6 +16,8 @@ $(document).ready(function ($) {
     });
 
   });
+
+  
 $(document).ready(function ($) {
     const $formulario = $("#contato");
     
