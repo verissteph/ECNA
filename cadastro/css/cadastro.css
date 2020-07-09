@@ -34,26 +34,30 @@
 .titulo {
     margin-top: 1.5vw;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.125vw;
     text-transform: uppercase;
     
 }
 
 .caixa__formulario--grupo {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 
 #email,
 #senha,
 #nome {
-    margin: .5vw auto;
-    width: 30%;
-    padding: .8%;
-    border-radius: 5px;
-    border: 1px solid #eee;
-    background-color: #1B1B1B;
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    height: 45px;
+    width: 80%;
+    padding: 5px;
+    padding-left: 16px;
+    margin: 20px 0px;
+    border-radius: 7px;
 }
 
 #email:focus {
@@ -63,13 +67,13 @@
 
 .caixa__formulario--btn {
     margin: 1vw 0;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
 
 #btn-entrar {
-    width: 30%;
+    /* width: 30%;
     padding: .8%;
     color: #fff;
     border-radius: 8px;
@@ -77,7 +81,16 @@
     justify-content: center;
     margin-top: .6%;
     background-color: #D701FF;
-    box-shadow: inset 0px 5px 20px #8c00ff;
+    box-shadow: inset 0px 5px 20px #8c00ff; */
+
+    background-color: #D701FF;
+    height: 45px;
+    width: 50%;
+    padding: 5px;
+    padding-left: 16px;
+    margin: 20px 0px;
+    border-radius: 7px;
+    border: none;
 }
 
 .check {
@@ -92,7 +105,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
-    margin-left: -6.2vw;
+    margin-left: -4.2vw;
 }
 .novidades{
     margin-left:-11vw;
@@ -102,7 +115,7 @@
 }
 
 /* até telas de 995px */
-@media(max-width:995px) {
+/* @media(max-width:995px) {
     #formulario {
         padding: 4vw;
     }
@@ -148,13 +161,13 @@
     #novidades__label{
         font-size: .85rem;
     }
-}
+} */
 
 /* a partir de telas de 450px até telas de 990px*/
-@media (min-width: 450px) and (max-width:990px) {
+/* @media (min-width: 450px) and (max-width:990px) { 
 
     /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
-    #formulario {
+    /* #formulario {
         padding: 10vw;
     }
 
@@ -185,8 +198,8 @@
     }
     .conjunto__check.novidades{
         margin-left: -2vw;
-    }
-}
+    } 
+}**/
 
 @media(max-width:320px){
     #formulario{
@@ -228,7 +241,7 @@
         width: 100%;
     }
 }
-@media(min-width:360px){
+@media(min-width:360px) and (max-width:620px){
     #formulario{
         padding: 10vw;
     }
@@ -254,13 +267,11 @@
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) and(max-width:1024px) {
     #formulario{
         padding: 5vw;
     }
-    .titulo{
-        font-size: 1.5rem;
-    }
+
     #email, #senha, #nome{
         font-size: 1rem;
         padding: 1.5vw;
@@ -272,6 +283,9 @@
     }
     #termos{
         margin-left: -6vw;
+    }
+    #novidades{
+        margin-left: -1.7vw;
     }
     #termos__label,
     #novidades__label{
