@@ -7,11 +7,21 @@ query += '?symbol=BTCUSDT';
 
 var url = burl + query;
 
-// CRIA AS VARIAVEIS QUE ARMAZENAM OS DADOS PARA COMPOR OS GRAFICOS
+// CRIA AS VARIAVEIS QUE ARMAZENAM OS DADOS COMO UM DATABASE
 
 var historicoPrecos = [];
 
 var segundos = []
+
+// CRIA AS VARIAVEIS QUE ARMAZENAM OS DADOS PARA COMPOR OS GRAFICOS
+
+var historicoPrecosGrafico = [];
+
+var segundosGrafico = []
+
+// CONFIGURA O INTERVALO
+
+var intervalo = 1
 
 // FAZ A REQUISICAO PARA A API
 // E ADICIONA OS NOVOS VALORES PARA AS VARIAVEIS
@@ -29,7 +39,18 @@ setInterval( () => {
     // console.log(historicoPrecos)
     // console.log(segundos)
   })
-}, 1000);
+}, intervalo*1000);
+
+// TRATA OS DADOS DO DATABASE
+
+setInterval( () => {
+  console.log(historicoPrecos)
+  // if ((segundos.length % 5) == 0) {
+  //   for (var i = 0; i < segundos.length; i++) {
+  //   }
+  // } 
+}, intervalo*1000)
+
 
 // GERA O GRAFICO DO DESKTOP
 
@@ -85,8 +106,8 @@ var chart = new Chart(ctx, {
 setInterval( () => {
   chart.update()
   if (segundos.length > 60) {
-    segundos.shift();
-    historicoPrecos.shift();
+    segundosGrafico.shift();
+    historicoPrecosGrafico.shift();
   }
 }, 1000);
 
