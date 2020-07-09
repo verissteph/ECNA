@@ -22,23 +22,23 @@ formulario.addEventListener("submit", function (e) {
     } else if (senha.value.length < 7 && senha.value !== '') {
         listaDeErros.innerHTML += "<li>" + "Deve ter no mínimo 6 caracteres";
     }
-    $(document).ready(function ($) {
-        const $formulario = $("#formulario");
-        
-        $formulario.submit(e => {
-          e.preventDefault();
-          const $action = $formulario.attr('action');
-          const $data = $formulario.serialize();
-          $.post($action, $data).then(() => {
-            Swal.fire({
-                icon: 'success',
-                title: 'Mensagem Enviada!',
-                text: 'Muito obrigado!',
-                footer: '<a href="/index.html">Voltar para home</a>'
-            });
-          });
-        });
-    
-      });
 });
 
+$(document).ready(function ($) {
+    const $formulario = $("#formulario");
+    
+    $formulario.submit(e => {
+      e.preventDefault();
+      const $action = $formulario.attr('action');
+      const $data = $formulario.serialize();
+      $.post($action, $data).then(() => {
+        Swal.fire({
+            icon: 'success',
+            title: 'Mensagem Enviada!',
+            text: 'Muito obrigado!',
+            footer: '<a href="/index.html">Voltar para home</a>'
+        });
+      });
+    });
+
+  });
