@@ -175,6 +175,7 @@ ul li .icones{
         justify-content: center;
         flex: 1;
         box-shadow: none;
+        border-left: none;
     }
     .envolocroTexto{
         padding-bottom: 10vh;
