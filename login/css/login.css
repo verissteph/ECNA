@@ -21,26 +21,55 @@
 }
 
 /* formulario */
+body{
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .caixa__formulario {
     width: 100%;
     background-color: #1B1B1B;
-    padding-bottom: 15vh;
-    padding: 3%;
+}
+
+#email #senha{
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    height: 45px;
+    width: 80%;
+    padding: 5px;
+    padding-left: 16px;
+    margin: 20px 0px;
+    border-radius: 7px;
+}
+
+.caixa__formulario div input {
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    height: 45px;
+    width: 80%;
+    padding: 5px;
+    padding-left: 16px;
+    margin: 20px 0px;
+    border-radius: 7px;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2vw;
-     width: 80%;
-    margin: 2vw auto;
+    padding: 3vw;
+    width: 90%;
+    max-width: 525px;
+    margin: 8vw auto;
+    box-shadow: -6px 22px 50px rgba(0,0,0,70%);
 }
 
 .titulo {
-    margin-top: 1.5vw;
+    margin-top: 0;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     /* font-size: 3rem; */
 }
@@ -49,21 +78,20 @@
     /* width: 100%; */
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 
 #email,
 #senha {
-    /* margin: .5vw auto; */
-      padding: .5%;
     border: 1px solid #eee;
     background-color: #1B1B1B;
-
-    font-size: 1.5rem;
     margin: 1.2vw auto;
-    border-radius: .5vw;
-     width: 60%;
-    text-align: center;
+    border-radius: 7px;
+    width: 100%;
+    text-align: left;
+    height: 45px;
+    padding: 5px;
+    width: 100%;
 }
 
 #email:focus {
@@ -76,7 +104,10 @@
     /* width: 100%; */
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+    border-radius: 7px;
+    height: 45px;
+    width: 100%;
 }
 
 #btn-entrar {
@@ -87,178 +118,39 @@
     /* border-radius: 8px; */
     align-self: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     /* padding: 1vw; */
     /* margin-top: .8vw; */
 
     font-size: 1.2rem;
     padding: .5vw;
-    border-radius: 1vw;
+    border-radius: 7px;
+    height: 45px;
     /* margin-top: 0; */ 
 }
 
-@media(max-width:320px){
-    #formulario{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .titulo{
-        font-size: .95rem;
-    }
+::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 16px;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    font-size: 16px; 
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;
+    font-size: 16px; 
+ }
+ 
+ :-ms-button-placeholder {  
+    color: #fff; 
+    font-size: 16px; 
+ }
 
-    #formulario--grupo{
-        width: 80%;
-    }
-
-    #nome, 
-    #email,
-    #senha{
-        padding: 2.5%;
-        width: 100%;
-        font-size: .75rem;
-        margin: 2vw 0;
-        border-radius: 2vw;
-    }
-    .check{
-        width: 100%;
-        margin-bottom: 2vw;
-    }
-    .conjunto__check.novidades{
-        margin-left: -10vw;
-    }
-    #termos{
-        margin-left: 9%;
-    }
-    .lista-erro li {
-        font-size:0.5rem;
-    }
-    #btn-entrar{
-        margin-bottom: 2%;
-        padding: .5vw;
-        width: 100%;
-        font-size: 1rem;
-        border-radius: 2vw;
-    }
-}
-
-@media(min-width:360px) and (max-width:440px){
-    #formulario{
-        padding: 10vw;
-    }
-    .titulo{
-        font-size: 1rem;
-    }
-    #email,
-    #senha{
-        text-align: center;
-        padding: 1vw;
-        margin: 2vw auto;
-
-        width: 100%;
-        border-radius: 2vw;
-        font-size: 1rem;
-    }
-
-    #btn-entrar{
-        padding: 1vw;
-        margin-top: 2vw;
-        width: 100%;
-        border-radius: 2vw;
-        font-size: 1rem;
-    }
-}
-
-/* a partir de telas de 450px até telas de 995px*/
-@media (min-width: 450px) and (max-width:990px) {
-
-    /* coloquei o and(max-width:990px) pq tava interferindo no estilo da tela grande (a q começamos fazendo) */
+ @media(max-width:995px){
     #formulario {
-        padding: 10vw;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
-
-    .titulo {
-        font-size: .9rem;
-    }
-
-
-    .caixa__formulario--grupo,
-    .caixa__formulario--btn {
-        width: 100%;
-    }
-
-    #email,
-    #senha {
-        width: 45%;
-        padding: .95vh;
-        margin: 0.8vw auto;
-    }
-
-    #btn-entrar {
-        padding: 1vh;
-        width: 45%;
-    }
-
-}
-
-@media(min-width:768px) and (max-width:1024px) {
-    #formulario{
-        padding: 5vw;
-    }
-    .titulo{
-        font-size: 1.5rem;
-    }
-    #email, #senha, #nome{
-        font-size: 1rem;
-        padding: 1.5vw;
-        border-radius: 1.2vw;
-        width: 60%;
-    }
-    .conjunto__check.termos{
-        width: 60%;
-    }
-    #termos{
-        margin-left: -6vw;
-    }
-    #termos__label,
-    #novidades__label{
-        font-size: 1.1rem;
-    }
-
-    #btn-entrar{
-        border-radius: 1.8vw;
-        width: 60%;
-        font-size: 1.4rem;
-    }
-}
-
-/* até telas de 995px */
-/* @media(max-width:995px) {
-    #formulario {
-        padding: 4vw;
-    }
-
-    .titulo {
-        font-size: 1.2rem;
-    }
-
-    .lista-erro {
-        margin-top: .8vh;
-    }
-
-    .lista-erro li {
-        font-weight: bold;
-        font-size: .75rem;
-        font-style: italic;
-    }
-
-    .caixa__formulario--grupo,
-    .caixa__formulario--btn {
-        width: 80%;
-    }
-
-
-} */
-
-/* @media(min-width:1024px){
-
-} */
+ }

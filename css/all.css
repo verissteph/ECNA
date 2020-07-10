@@ -168,6 +168,7 @@ footer div div p.endereco {
 footer div div p.sobre {
     font-size: 12px;
     line-height: 35px;
+    text-align: initial;
 }
 
 footer div div p span {
@@ -184,6 +185,10 @@ footer div div p span {
     header nav {
         flex-wrap: wrap;
         width: 100%;
+    }
+
+    footer div div p.sobre {
+        text-align: center;
     }
 
     .paginas {
@@ -254,6 +259,10 @@ footer div div p span {
         height: 340px;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .tab3{
+        padding-left: 0px;
     }
 
 
