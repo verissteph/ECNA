@@ -243,7 +243,7 @@
         width: 100%;
     }
 }
-@media(min-width:360px) and (max-width:620px){
+/* @media(min-width:360px) and (max-width:620px){
 
     .caixa__formulario--grupo {
         width: 100%;
@@ -272,7 +272,7 @@
         padding: 2vw;
         margin-top: 2vw;
     }
-}
+} */
 
 @media(min-width:768px) and(max-width:1024px) {
     #formulario{
