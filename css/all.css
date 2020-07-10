@@ -76,6 +76,46 @@ nav {
     justify-content: space-around;
 }
 
+.paginas ul li{
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.79, 0.07, 0.27, 0.96);
+    background-color: rgba(0,0,0,0);
+}
+
+.paginas ul li a{
+    background-color: rgba(0,0,0,0);
+}
+
+.paginas ul li:hover{
+    box-shadow: 4px 13px 34px rgba(0,0,0,80%);
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s; 
+}
+
+.btn-menu::before{
+    background: #8c00ff;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s cubic-bezier(0.79, 0.07, 0.27, 0.96);
+    position: absolute;
+    border-radius: 7px;
+  }
+  
+  .btn-menu::before{
+    width: 0%;
+    height: 45px;
+  }
+  
+  .btn-menu:hover::before{
+    width: 140%;
+  }
+
+
+
 .login-cadastro {
     width: 100%;
     display: flex;
@@ -94,7 +134,14 @@ nav {
     font-weight: bold;
     border-radius: 7px;
     text-decoration: none;
+    transition: all 0.6s cubic-bezier(0.79, 0.07, 0.27, 0.96);
 }
+
+.criar_conta:hover{
+    box-shadow: 4px 13px 34px rgba(0,0,0,80%);
+}
+
+
 
 .entrar {
     height: 45px;
@@ -106,7 +153,35 @@ nav {
     border-radius: 7px;
     margin-right: 10%;
     text-decoration: none;
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.79, 0.07, 0.27, 0.96);
+    z-index: 2;
 }
+
+.entrar:hover{
+    box-shadow: 4px 13px 34px rgba(0,0,0,80%);
+}
+
+.btn-animacao::before{
+    background: #8c00ff;
+    content: "";
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    z-index: -1;
+    transition: all 0.6s cubic-bezier(0.79, 0.07, 0.27, 0.96);
+    position: absolute;
+    border-radius: 7px;
+  }
+  
+  .btn-animacao::before{
+    width: 0%;
+    height: 45px;
+  }
+  
+  .btn-animacao:hover::before{
+    width: 100%;
+  }
 
 /*inicio do fim do header*/
 
