@@ -215,6 +215,7 @@ ul li .icones{
     .card{
         height: 50vh;
         margin-top: 2vh;
+        border-left: none;
     }
 
     ul .icones {
